@@ -12,6 +12,8 @@ gem 'haml-rails'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'sass-rails', '~> 4.0.3'
 gem 'thin'
+gem 'omniauth'
+gem 'omniauth-facebook'
 
 gem 'spring',        group: :development
 

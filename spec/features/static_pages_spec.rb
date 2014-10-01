@@ -14,13 +14,13 @@ RSpec.describe "static pages", type: :feature do
   describe "contact page" do
   end
 
-  describe "layout links" do
+  describe "header and footer links" do
     before { visit root_path }
     subject { page }
 
-    xit { should have_link "About", href: about_path }
-    xit { should have_link "Contact", href: contact_path }
-    xit { should have_link "Log in", href: login_path }
-    xit { should have_link "Open State Colorado", href: root_path }
+    it { should have_link "About", href: about_path }
+    it { should have_link "Contact", href: contact_path }
+    it { should have_link "Log in", href: login_path }
+    it { should have_link "Open State Colorado", href: root_path }
   end
 end

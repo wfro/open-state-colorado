@@ -1,13 +1,16 @@
 Rails.application.routes.draw do
-  get 'sessions/new'
-
-  get 'sessions/create'
-
-  get 'sessions/destroy'
+  resources :sessions, only: [:new, :create, :destroy]
 
   get "/auth/:provider/callback", to: "sessions#create"
 
   root to: "static_pages#home"
+  get "/about", to: "static_pages#about", as: :about
+  get "/contact", to: "static_pages#contact", as: :contact
+
+
+  # custom routes for omniauth
+  get "/login", to: redirect("auth/facebook"), as: :login
+  get "/logout", to: "sessions#destroy", as: :logout
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

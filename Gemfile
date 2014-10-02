@@ -13,6 +13,7 @@ gem 'sass-rails', '~> 4.0.3'
 gem 'thin'
 gem 'omniauth'
 gem 'omniauth-facebook'
+gem 'figaro'
 
 gem 'spring',        group: :development
 

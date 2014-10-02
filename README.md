@@ -16,8 +16,8 @@ Iterations (10/2, 10/6, 10/9, 10/13, 10/16)
 
 - Users can bookmark bills and legislators
 - Users can see legislators by district
+- Legislators are displayed with donors
 - Users can use a web interface to view a general list of bills and filter by issues
-- Find donors for legislators
 
 #### "Ship is actively sinking" protocol:
 
@@ -37,13 +37,15 @@ Iterations (10/2, 10/6, 10/9, 10/13, 10/16)
 
 #### Want:
 
-- Web interface for viewing bills that have been selected for a user
+- Web interface for viewing bills that have been bookmarked for a user
 - Show legislators by district
+- Users can view individual legislators with contact information
+- Users can email legislators via modal
 
-#### "Ship is actively sinking protocol":
+#### "Ship is actively sinking" protocol:
 
 - Bill information in the notification itself is the priority
-- If this is behind, ditch sponsors/contact info in bill
+- If this is behind, ditch sponsors/contact info in bill until next iteration
 
 ## 10/6 - Generate bills for users
 
@@ -54,7 +56,8 @@ Iterations (10/2, 10/6, 10/9, 10/13, 10/16)
 
 #### Want:
 
-- Actually do something with the data
+- Some background jobs in place for API calls
+- It notifies a user via email of currently open bills
 
 ## 10/2 - Authentication working and tested
 
@@ -62,6 +65,13 @@ Iterations (10/2, 10/6, 10/9, 10/13, 10/16)
 
 - User can sign in via facebook
 - Application can remember user past browser close
+- At least a few decent functioning tests
+- Basic page layout
+
+#### Want
+
+- Set up proper environment variables for api keys
+- Be able to retrieve data from the Open States API from within the application
 
 
 

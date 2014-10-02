@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe "Authentication", type: :feature do
+RSpec.describe "Facebook log in", type: :feature do
 
   describe "user with valid information" do
     it "is signed in successfully" do
@@ -18,7 +18,6 @@ RSpec.describe "Authentication", type: :feature do
       OmniAuth.config.mock_auth[:facebook] = :invalid_credentials
       visit "/"
       click_link "Log in"
-      save_and_open_page
       expect(page).to have_content "Log in"
       expect(page).to have_selector "div.alert.alert-notice"
     end

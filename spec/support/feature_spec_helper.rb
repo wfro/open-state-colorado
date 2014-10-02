@@ -4,7 +4,7 @@ module FeatureSpecHelper
     OmniAuth.config.mock_auth[:facebook] = {
       "provider" => "facebook",
       "uid" => "12345",
-      "user_info" => {
+      "info" => {
         "name" => "facebook user"
       }
     }

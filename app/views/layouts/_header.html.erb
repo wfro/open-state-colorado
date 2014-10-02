@@ -16,8 +16,12 @@
         <li><a href=<%= contact_path %>>Contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="../navbar/">Welcome, Placeholder!</a></li>
-        <li class="active"><a href=<%= login_path %>>Log in</a></li>
+        <% if signed_in? %>
+          <li><%= link_to "Welcome, #{current_user.name}" %></li>
+          <li class="active"><%= link_to "Log out", logout_path %></li>
+        <% else %>
+          <li class="active"><%= link_to "Log in", login_path %></li>
+        <% end %>
       </ul>
     </div>
   </div>

@@ -20,7 +20,6 @@ ActiveRecord::Schema.define(version: 20141005175157) do
     t.string   "open_states_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "title"
   end
 
   create_table "legislators", force: true do |t|
@@ -30,6 +29,7 @@ ActiveRecord::Schema.define(version: 20141005175157) do
     t.string   "email"
     t.string   "photo_url"
     t.string   "url"
+    t.string   "full_name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

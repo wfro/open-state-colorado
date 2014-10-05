@@ -7,6 +7,7 @@ class CreateLegislators < ActiveRecord::Migration
       t.string :email
       t.string :photo_url
       t.string :url
+      t.string :full_name
       t.timestamps
     end
   end

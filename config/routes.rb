@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :sessions, only: [:new, :create, :destroy]
   resources :users, only: [:show]
+  resources :legislators, only: [:index, :show, :destroy]
 
   get "/auth/:provider/callback", to: "sessions#create"
   get "/auth/failure", to: "sessions#omniauth_failure"

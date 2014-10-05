@@ -22,6 +22,9 @@ RSpec.describe Legislator, :type => :model do
   it { should respond_to(:full_name) }
   it { should be_valid }
 
-  xit "should save api data to the database" do
+  it "should save api data to the database" do
+    json_response = JSON.parse(mock_json_response)
+    legislator = Legislator.save_data_from_api(json_response)
+    expect(legislator).to be_valid
   end
 end

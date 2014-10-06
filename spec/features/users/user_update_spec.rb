@@ -6,7 +6,7 @@ RSpec.describe "user update", type: :feature do
     SessionsHelper.stub(:current_user).and_return(User.first)
     mock_auth_hash
     click_link "Log in"
-    visit "/users/1"
+    click_link "Welcome, facebook user"
   end
 
   describe "with valid district between 1 and 65" do

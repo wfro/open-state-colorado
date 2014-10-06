@@ -16,7 +16,7 @@ RSpec.describe User, type: :model do
 
   context "with a district not between 1 - 65" do
     it "should be invalid" do
-      @user.district = nil
+      @user.district = "100"
       expect(@user).not_to be_valid
     end
   end

@@ -5,5 +5,6 @@ FactoryGirl.define do
     provider "MyString"
     uid "MyString"
     name "MyString"
+    district "1"
   end
 end

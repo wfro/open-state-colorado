@@ -14,4 +14,9 @@
     </div>
 <% else %>
   <p><%= "Your district: #{@user.district}" %></p>
+  <% @user.legislators.each do |leg| %>
+    <p><%= leg.full_name %></p>
+    <p><%= leg.email %></p>
+  <% end %>
 <% end %>
+

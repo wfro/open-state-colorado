@@ -1,4 +1,5 @@
 class Legislator < ActiveRecord::Base
+  scope :district, ->(id) { where(:district => id.to_s)}
 
   def self.save_data_from_api(data = {})
     create! do |legislator|

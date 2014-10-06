@@ -10,4 +10,8 @@ class User < ActiveRecord::Base
       end
     end
   end
+
+  def legislators
+    Legislator.district(district)
+  end
 end

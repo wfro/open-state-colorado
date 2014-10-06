@@ -1,1 +1,14 @@
-<p><%= @user.name %></p>
+<p><%= "Hello, #{@user.name}" %></p>
+
+<p>Add your district to see your state legislators.</p>
+
+<div class="row">
+  <div class="span6 offset3">
+    <%= form_for(@user) do |f| %>
+      <%= render "shared/error_messages" %>
+      <%= f.label :district %>
+      <%= f.text_field :district %>
+
+      <%= f.submit "Add my district", class: "btn btn-large btn-default" %>
+    <% end %>
+  </div>

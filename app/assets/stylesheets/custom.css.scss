@@ -42,3 +42,19 @@ footer {
     }
   }
 }
+
+// Bootstrap overrides
+.navbar-custom {
+  background-color: #A5DBE6;
+  color: #DE0909;
+}
+
+.navbar-brand {
+  font-size: 20px;
+}
+
+.navbar .nav > li > a {
+  text-decoration: none;
+  color:  #474747;
+}
+

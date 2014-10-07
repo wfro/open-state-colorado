@@ -17,6 +17,10 @@ class UsersController < ApplicationController
     end
   end
 
+  def send_notification
+    UserNotifier.send_notification_email(@user).deliver
+  end
+
   private
 
   def user_params

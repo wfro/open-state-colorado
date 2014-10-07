@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :correct_user
+  before_action :correct_user, only: [:show, :update]
 
   def show
     @user = User.find(params[:id])
@@ -18,7 +18,7 @@ class UsersController < ApplicationController
   end
 
   def send_notification
-    UserNotifier.send_notification_email(@user).deliver
+    UserNotifier.send_user_notification(@user).deliver
   end
 
   private

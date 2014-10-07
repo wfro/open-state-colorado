@@ -5,7 +5,7 @@ RSpec.describe "static pages", type: :feature do
     before { visit root_path }
     subject { page }
 
-    it { should have_content "Open State Colorado" }
+    it { should have_content "wamlut" }
   end
 
   describe "about page" do
@@ -21,6 +21,6 @@ RSpec.describe "static pages", type: :feature do
     it { should have_link "About", href: about_path }
     it { should have_link "Contact", href: contact_path }
     it { should have_link "Log in", href: login_path }
-    it { should have_link "Open State Colorado", href: root_path }
+    it { should have_link "wamlut", href: root_path }
   end
 end

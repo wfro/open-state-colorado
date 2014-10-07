@@ -1,9 +1,9 @@
 class UserNotifier < ActionMailer::Base
-  default from: "from@example.com"
+  default from: "will@wamlut.com"
 
   def send_user_notification(user)
     @user = user
     mail(:to => @user.email,
-         :subject => "This is an example notification")
+         :subject => "Updates from wamlut.com")
   end
 end

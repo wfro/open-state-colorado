@@ -5,6 +5,7 @@ FactoryGirl.define do
     provider "MyString"
     uid "MyString"
     name "MyString"
+    email "test@example.com"
     district "1"
   end
 end

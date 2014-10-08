@@ -9,7 +9,6 @@ RSpec.describe "Facebook log in", type: :feature do
       click_link "Log in"
       expect(page).to have_content "Logged in as facebook user"
       expect(page).to have_content "Log out"
-      expect(page).not_to have_content "Log in"
     end
   end
 

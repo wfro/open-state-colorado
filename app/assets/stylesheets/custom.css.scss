@@ -7,7 +7,41 @@ html {
 }
 
 body {
-  padding-top: 160px;
+  padding-top: 60px;
+}
+
+// Homepage
+.homepage-container {
+  text-align: center;
+}
+
+.home-title {
+  font-weight: 100;
+  font-size: 70px;
+}
+
+.home-subheader {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.facebook-login {
+  margin-top: 28px;
+  color: #4c66a4;
+  font-size: 42px;
+  font-weight: 100;
+}
+
+.home-copy {
+  font-size: 26px;
+  font-weight: 200;
+  margin-top: 30px;
+}
+
+.browse-representatives {
+  color: #A81313;
+  font-size: 42px;
+  font-weight: 100;
 }
 
 // Footer

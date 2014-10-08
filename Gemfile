@@ -14,6 +14,7 @@ gem 'thin'
 gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'figaro'
+gem 'redis'
 
 gem 'spring',        group: :development
 

@@ -25,16 +25,6 @@ class OpenStates
     connection.get legislators_search_string
   end
 
-  def get_leg_by_distrcit(district)
-    connection.get legislators_by_district_search_string(districts)
-  end
-
-  def get_leg_by_external_id(id)
-    connection.get legislators_by_id_search_string(id)
-  end
-
-
-
   def connection
     return Faraday.new(url: BASE_URL) do |faraday|
       faraday.request :url_encoded

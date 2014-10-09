@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141008231239) do
+ActiveRecord::Schema.define(version: 20141009035038) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -37,6 +37,24 @@ ActiveRecord::Schema.define(version: 20141008231239) do
     t.datetime "updated_at"
   end
 
+  create_table "no_votes", force: true do |t|
+    t.integer  "vote_id"
+    t.string   "leg_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "no_votes", ["vote_id"], name: "index_no_votes_on_vote_id", using: :btree
+
+  create_table "other_votes", force: true do |t|
+    t.integer  "vote_id"
+    t.string   "leg_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "other_votes", ["vote_id"], name: "index_other_votes_on_vote_id", using: :btree
+
   create_table "users", force: true do |t|
     t.string   "provider"
     t.string   "uid"
@@ -61,5 +79,14 @@ ActiveRecord::Schema.define(version: 20141008231239) do
   end
 
   add_index "votes", ["bill_id"], name: "index_votes_on_bill_id", using: :btree
+
+  create_table "yes_votes", force: true do |t|
+    t.string   "leg_id"
+    t.integer  "vote_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "yes_votes", ["vote_id"], name: "index_yes_votes_on_vote_id", using: :btree
 
 end

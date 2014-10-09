@@ -1,30 +1,21 @@
 require 'rails_helper'
 
 RSpec.describe OpenStates, type: :model do
-  describe "#legislators_by_district_search_string" do
-    it "returns correct query string" do
-      district = 1
-      open_states = OpenStates.new
-      result = open_states.legislators_by_district_search_string(1)
-      expected = "legislators/?apikey=bfef33e0a83e4e98931765048ca24dd6&district=1&state=co"
-      expect(result).to eq expected
-    end
-  end
+  let(:open_states) { OpenStates.new }
 
   describe "#legislators_search_string" do
     it "returns correct query string" do
-      open_states = OpenStates.new
       result = open_states.legislators_search_string
-      expected = "legislators/?apikey=bfef33e0a83e4e98931765048ca24dd6&state=co"
+      expected = "legislators/?apikey=#{ENV['open_states_api_key']}&state=co"
       expect(result).to eq expected
     end
   end
 
-  describe "#legislators_by_id_search_string" do
-    it "returns correct query string" do
-      open_states = OpenStates.new
-      result = open_states.legislators_by_id_search_string("12345")
-      expected = "legislators/12345/?apikey=bfef33e0a83e4e98931765048ca24dd6"
+  describe "#bills_search_string" do
+    it "returns correct query string for bills starting in 2014" do
+      result = open_states.bills_search_string
+      expected = "bills/?apikey=#{ENV['open_states_api_key']}&state=co&updated_since=2014-01-01"
+      expect(result).to eq expected
     end
   end
 

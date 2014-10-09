@@ -7,7 +7,6 @@ RSpec.describe Vote, :type => :model do
 
   subject { @vote }
 
-  it { should respond_to(:bill_id) }
   it { should respond_to(:motion) }
   it { should respond_to(:chamber) }
   it { should respond_to(:date) }
@@ -16,4 +15,9 @@ RSpec.describe Vote, :type => :model do
   it { should respond_to(:other_count) }
   it { should respond_to(:external_id) }
   it { should be_valid }
+
+  it { should belong_to(:bill) }
+  it { should have_many(:yes_votes) }
+  it { should have_many(:no_votes) }
+  it { should have_many(:other_votes) }
 end

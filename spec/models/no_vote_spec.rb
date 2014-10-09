@@ -8,6 +8,8 @@ RSpec.describe NoVote, :type => :model do
   subject { @no_vote }
 
   it { should respond_to(:leg_id) }
-  it { should respond_to(:vote_id) }
   it { should be_valid }
+
+  it { should belong_to(:vote) }
 end
+

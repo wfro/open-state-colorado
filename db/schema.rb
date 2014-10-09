@@ -11,10 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141009035038) do
+ActiveRecord::Schema.define(version: 20141009172953) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "actions", force: true do |t|
+    t.integer  "bill_id"
+    t.string   "date"
+    t.string   "action"
+    t.string   "actor"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "actions", ["bill_id"], name: "index_actions_on_bill_id", using: :btree
 
   create_table "bills", force: true do |t|
     t.datetime "created_at"

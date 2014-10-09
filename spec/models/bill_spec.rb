@@ -13,6 +13,8 @@ RSpec.describe Bill, :type => :model do
   it { should respond_to(:type) }
   it { should be_valid }
 
+  it { should have_many(:votes) }
+
   context "without valid open states id" do
     it "should be invalid" do
       @bill.external_id = nil

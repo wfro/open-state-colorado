@@ -4,7 +4,7 @@ RSpec.describe "User dashboard", type: :feature do
 
   before do
     visit "/"
-    @user = SessionsHelper.stub(:current_user).and_return(User.first)
+    SessionsHelper.stub(:current_user).and_return(User.first)
     mock_auth_hash
     click_link "Log in"
     click_link "Welcome, facebook user"

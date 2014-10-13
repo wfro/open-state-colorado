@@ -28,9 +28,12 @@ class UsersController < ApplicationController
     lat = result.first.data["geometry"]["location"]["lat"]
     long = result.first.data["geometry"]["location"]["lng"]
     resp = OpenStates.new.geolocate_legislators(lat, long)
-    #resp = JSON.parse(resp.body)
-    #resp.each { |leg_data| @user.legislators.create(leg_data) }
-    #redirect_to user_path(@user)
+    resp = JSON.parse(resp.body)
+    resp.each do |leg_data|
+      filtered = Legislator.filter_attributes(leg_data)
+      @user.legislators.create(filtered)
+    end
+    redirect_to user_path(@user)
   end
 
   private

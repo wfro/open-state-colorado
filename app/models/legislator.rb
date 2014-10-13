@@ -1,6 +1,9 @@
 class Legislator < ActiveRecord::Base
   scope :district, ->(id) { where(:district => id.to_s)}
 
+  has_many :user_legislators
+  has_many :users, through: :user_legislators
+
   def self.filter_attributes(data = {})
     attributes = %w[district party email photo_url url full_name]
     filtered = data.select { |key, value| attributes.include?(key) }

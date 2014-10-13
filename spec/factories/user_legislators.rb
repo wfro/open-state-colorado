@@ -2,7 +2,7 @@
 
 FactoryGirl.define do
   factory :user_legislator do
-    user nil
-    legislator nil
+    user
+    legislator
   end
 end

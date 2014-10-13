@@ -1,6 +1,5 @@
 <div class="container">
   <div class="user-profile">
-    <% if !@user.district %>
       <p class="add-district">Enter your address and we'll find your district for you.</p>
       <div class="row">
         <div class="span6 offset3">
@@ -10,13 +9,10 @@
           <%= submit_tag("Find my people") %>
         <% end %>
         </div>
-    <% else %>
-      <p><%= "Your district: #{@user.district}" %></p>
       <% @user.legislators.each do |leg| %>
         <p><%= leg.full_name %></p>
-        <p><%= leg.email %></p>
+        <p><%= "District #{leg.district}" %></p>
       <% end %>
-    <% end %>
   </div>
 </div>
 

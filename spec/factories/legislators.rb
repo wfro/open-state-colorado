@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :legislator do
-    open_states_id "12345"
+    external_id "12345"
     district "1"
     party "democrat"
     email "john.doe@example.gov"

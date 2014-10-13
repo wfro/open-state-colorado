@@ -11,6 +11,7 @@ RSpec.describe User, type: :model do
   it { should respond_to(:provider) }
   it { should respond_to(:uid) }
   it { should respond_to(:district) }
+  it { should have_many(:legislators) }
 
   it { should be_valid }
 
@@ -28,18 +29,6 @@ RSpec.describe User, type: :model do
 
       @user.district = "-40"
       expect(@user).not_to be_valid
-    end
-  end
-
-  describe "#legislators" do
-    it "returns collection of legislators by district" do
-      @user.district = "1"
-      l1 = FactoryGirl.create :legislator, full_name: "John Doe", district: "1"
-      l2 = FactoryGirl.create :legislator, full_name: "Jane Roe", district: "1"
-
-      expect(@user.legislators.count).to eq 2
-      expect(@user.legislators[0].full_name).to eq "John Doe"
-      expect(@user.legislators[1].full_name).to eq "Jane Roe"
     end
   end
 end

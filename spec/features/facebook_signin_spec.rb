@@ -14,8 +14,8 @@ RSpec.describe "Facebook log in", type: :feature do
 
   describe "user with invalid information" do
     it "is redirected to root" do
-      OmniAuth.config.mock_auth[:facebook] = :invalid_credentials
       visit "/"
+      OmniAuth.config.mock_auth[:facebook] = :invalid_credentials
       click_link "Log in"
       expect(page).to have_content "Log in"
       expect(page).to have_selector "div.alert.alert-notice"

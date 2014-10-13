@@ -18,6 +18,18 @@ class OpenStates
     }.to_query
   end
 
+  def lat_long_search_string
+    search_string = "legislators/geo/?" + {
+      apikey: API_KEY,
+      lat: lat,
+      long: long
+    }.to_query
+  end
+
+  def geolocate_legislators(lat, long)
+    connection.get(lat_long_search_string)
+  end
+
   def get_legislators
     connection.get(legislators_search_string)
   end

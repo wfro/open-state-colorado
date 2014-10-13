@@ -18,7 +18,7 @@ class OpenStates
     }.to_query
   end
 
-  def lat_long_search_string
+  def lat_long_search_string(lat, long)
     search_string = "legislators/geo/?" + {
       apikey: API_KEY,
       lat: lat,

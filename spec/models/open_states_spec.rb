@@ -19,6 +19,15 @@ RSpec.describe OpenStates, type: :model do
     end
   end
 
+  describe "#lat_long_search_string" do
+    it "returns correcty query string" do
+       lat = "35.1"
+       long = "-100.5"
+       result = open_states.lat_long_search_string(lat, long)
+       expected = "legislators/geo/?apikey=bfef33e0a83e4e98931765048ca24dd6&lat=35.1&long=-100.5"
+    end
+  end
+
   describe "#connection" do
     it "returns a Faraday connection object" do
       result = OpenStates.new.connection

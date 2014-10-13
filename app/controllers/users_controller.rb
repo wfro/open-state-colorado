@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :correct_user, only: [:show, :update]
+  before_action :correct_user, only: [:show, :update, :geolocate]
 
   def show
     @user = User.find(params[:id])
@@ -7,7 +7,6 @@ class UsersController < ApplicationController
 
   def update
     @user = User.find(params[:id])
-
 
     if @user.update_attributes(user_params)
       flash[:success] = "District added."
@@ -29,9 +28,9 @@ class UsersController < ApplicationController
     long = result.first.data["geometry"]["location"]["lng"]
     resp = OpenStates.new.geolocate_legislators(lat, long)
     resp = JSON.parse(resp.body)
-    resp.each do |leg_data|
-      filtered = Legislator.filter_attributes(leg_data)
-      @user.legislators.create(filtered)
+    resp.each do |legislator|
+      legislator = Legislator.find_by(external_id: legislator["leg_id"])
+      UserLegislator.create(user_id: @user.id, legislator_id: legislator.id)
     end
     redirect_to user_path(@user)
   end

@@ -1,22 +1,23 @@
-<p><%= "Hello, #{@user.name}" %></p>
+<div class="container">
+  <div class="user-profile">
+    <% if !@user.district %>
+      <p class="add-district">Enter your address and we'll find your district for you.</p>
+      <div class="row">
+        <div class="span6 offset3">
+          <%= form_for(@user) do |f| %>
+            <%= render "shared/error_messages" %>
+            <%= f.text_field :district %>
 
-<% if !@user.district %>
-  <p>Add your district to see your state legislators.</p>
-  <div class="row">
-    <div class="span6 offset3">
-      <%= form_for(@user) do |f| %>
-        <%= render "shared/error_messages" %>
-        <%= f.label :district %>
-        <%= f.text_field :district %>
-
-        <%= f.submit "Add my district", class: "btn btn-large btn-default" %>
+            <%= f.submit "Find my district", class: "btn btn-large btn-default" %>
+          <% end %>
+        </div>
+    <% else %>
+      <p><%= "Your district: #{@user.district}" %></p>
+      <% @user.legislators.each do |leg| %>
+        <p><%= leg.full_name %></p>
+        <p><%= leg.email %></p>
       <% end %>
-    </div>
-<% else %>
-  <p><%= "Your district: #{@user.district}" %></p>
-  <% @user.legislators.each do |leg| %>
-    <p><%= leg.full_name %></p>
-    <p><%= leg.email %></p>
-  <% end %>
-<% end %>
+    <% end %>
+  </div>
+</div>
 

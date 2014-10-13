@@ -9,10 +9,10 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
 
     if @user.update_attributes(user_params)
-      flash[:success] = "District added."
+      flash[:success] = "Account information successfully updated!"
       redirect_to user_path(@user)
     else
-      flash[:error] = "Invalid input.  Please enter a district between 1 and 65."
+      flash[:error] = "Invalid input, please try again."
       render "show"
     end
   end

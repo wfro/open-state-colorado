@@ -1,18 +1,28 @@
 <div class="container">
   <div class="user-profile">
-      <p class="add-district">Enter your address and we'll find your district for you.</p>
-      <div class="row">
-        <div class="span6 offset3">
+    <p class="add-district">Enter your address and we'll find your district for you.</p>
+    <div class="row">
+      <div class="span6 offset3">
         <%= form_tag(geolocate_user_path(@user), method: "post") do %>
           <%= label_tag(:address, "Address:") %>
           <%= text_field_tag(:address) %>
           <%= submit_tag("Find my people") %>
         <% end %>
-        </div>
+      </div>
+        <p class="add-district">Add your email to begin recieving notifications</p>
+      <div class="span6 offset3">
+        <%= form_for(@user) do |f| %>
+          <%= f.label :email %>
+          <%= f.text_field :email %>
+          <%= f.submit "Add my email" %>
+        <% end %>
+      </div>
+
       <% @user.legislators.each do |leg| %>
         <p><%= leg.full_name %></p>
         <p><%= "District #{leg.district}" %></p>
       <% end %>
+    </div>
   </div>
 </div>
 

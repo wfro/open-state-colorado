@@ -18,4 +18,13 @@ RSpec.describe "user update", type: :feature do
     xit "re-renders #show" do
     end
   end
+
+  context "with no email associated with their account" do
+    it "successfully adds an email address" do
+      fill_in "user[email]", with: "john@example.com"
+      click_button "Add my email"
+      expect(page).not_to have_content "Add my email"
+      expect(page).to have_css "div.alert.alert-success", text: "Account information successfully updated!"
+    end
+  end
 end

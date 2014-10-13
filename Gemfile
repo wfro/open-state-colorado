@@ -15,6 +15,7 @@ gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'figaro'
 gem 'redis'
+gem 'geocoder'
 
 gem 'spring',        group: :development
 

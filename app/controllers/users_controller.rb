@@ -7,12 +7,7 @@ class UsersController < ApplicationController
 
   def update
     @user = User.find(params[:id])
-    result = Geocoder.search(params[:address])
-    lat = result.data["geometry"]["location"]["lat"]
-    long = result.data["geometry"]["location"]["long"]
-    resp = OpenStates.new.geolocate_legislators(lat: lat, long: long)
-    resp = JSON.parse(resp.body)
-    resp.each { |leg_data| @user.legislators.create(leg_data) }
+
 
     if @user.update_attributes(user_params)
       flash[:success] = "District added."
@@ -25,6 +20,17 @@ class UsersController < ApplicationController
 
   def send_notification
     UserNotifier.send_user_notification(@user).deliver
+  end
+
+  def geolocate
+    @user = User.find(params[:id])
+    result = Geocoder.search(params[:address])
+    lat = result.first.data["geometry"]["location"]["lat"]
+    long = result.first.data["geometry"]["location"]["lng"]
+    resp = OpenStates.new.geolocate_legislators(lat, long)
+    #resp = JSON.parse(resp.body)
+    #resp.each { |leg_data| @user.legislators.create(leg_data) }
+    #redirect_to user_path(@user)
   end
 
   private

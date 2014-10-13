@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   resources :sessions, only: [:new, :create, :destroy]
-  resources :users, only: [:show, :update]
+  resources :users, only: [:show, :update] do
+    member do
+      post "geolocate"
+    end
+  end
   resources :legislators, only: [:index, :show, :destroy]
 
   get "/auth/:provider/callback", to: "sessions#create"
@@ -13,4 +17,6 @@ Rails.application.routes.draw do
   # custom routes for omniauth
   get "/login", to: redirect("/auth/facebook"), as: :login
   get "/logout", to: "sessions#destroy", as: :logout
+
+  # post "users/geolocate", to: "users#geolocate", as: :geolocate_user
 end

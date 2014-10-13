@@ -4,12 +4,11 @@
       <p class="add-district">Enter your address and we'll find your district for you.</p>
       <div class="row">
         <div class="span6 offset3">
-          <%= form_for(@user) do |f| %>
-            <%= render "shared/error_messages" %>
-            <%= f.text_field :district %>
-
-            <%= f.submit "Find my district", class: "btn btn-large btn-default" %>
-          <% end %>
+        <%= form_tag(geolocate_user_path(@user), method: "post") do %>
+          <%= label_tag(:address, "Address:") %>
+          <%= text_field_tag(:address) %>
+          <%= submit_tag("Find my people") %>
+        <% end %>
         </div>
     <% else %>
       <p><%= "Your district: #{@user.district}" %></p>

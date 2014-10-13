@@ -19,7 +19,7 @@ class OpenStates
   end
 
   def lat_long_search_string(lat, long)
-    search_string = "legislators/geo/?" + {
+    "legislators/geo/?" + {
       apikey: API_KEY,
       lat: lat,
       long: long
@@ -27,7 +27,7 @@ class OpenStates
   end
 
   def geolocate_legislators(lat, long)
-    connection.get(lat_long_search_string)
+    connection.get(lat_long_search_string(lat, long))
   end
 
   def get_legislators

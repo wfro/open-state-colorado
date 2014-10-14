@@ -13,6 +13,7 @@
     <% else %>
       <div>Address added!</div>
     <% end %>
+      <% if @user.email.nil? %>
       <%= form_for(@user) do |f| %>
         <div class="email-field">
           <%= f.label :email, "Email:" %>
@@ -20,9 +21,15 @@
           <%= f.submit "Add my email" %>
         </div>
       <% end %>
+      <% else %>
+        <div>Email added!</div>
+      <% end %>
     </div>
-  </div>
-  <div class="initial-user-info-subheader">
-    <p></p>
+
+    <div class="proceed-notifications">
+      <% unless @user.legislators.empty? && @user.email.nil? %>
+        <%= link_to "Click here to manage your notifications!", notifications_user_path(@user), class: "proceed-link" %>
+      <% end %>
+    </div>
   </div>
 </div>

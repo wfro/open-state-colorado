@@ -1,27 +1,28 @@
-<div class="container">
-  <div class="user-profile">
-    <p class="initial-user-info">Enter your address and email to get started with notifications!</p>
+<div class="user-profile">
+  <p class="initial-user-info">Enter your address and email to get started with notifications!</p>
 
-    <div class="address-email-form">
-        <%= form_tag(geolocate_user_path(@user), method: "post") do %>
-          <div class="address-field">
-            <%= label_tag(:address, "Address:") %>
-            <%= text_field_tag(:address) %>
-            <%= submit_tag("Find my people") %>
-          </div>
-        <% end %>
-        <%= form_for(@user) do |f| %>
-          <div class="email-field">
-            <%= f.label :email, "Email:" %>
-            <%= f.text_field :email %>
-            <%= f.submit "Add my email" %>
-          </div>
-        <% end %>
-      </div>
-    </div>
-    <div class="initial-user-info-subheader">
-      <p></p>
+  <div class="address-email-form">
+    <% if @user.legislators.empty? %>
+      <%= form_tag(geolocate_user_path(@user), method: "post") do %>
+        <div class="address-field">
+          <%= label_tag(:address, "Address:") %>
+          <%= text_field_tag(:address) %>
+          <%= submit_tag("Find my people") %>
+        </div>
+      <% end %>
+    <% else %>
+      <div>Address added!</div>
+    <% end %>
+      <%= form_for(@user) do |f| %>
+        <div class="email-field">
+          <%= f.label :email, "Email:" %>
+          <%= f.text_field :email %>
+          <%= f.submit "Add my email" %>
+        </div>
+      <% end %>
     </div>
   </div>
+  <div class="initial-user-info-subheader">
+    <p></p>
+  </div>
 </div>
-

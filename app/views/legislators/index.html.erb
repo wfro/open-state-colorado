@@ -1,0 +1,32 @@
+<%= @legislators.in_groups_of(4, false) do |legislators| %>
+  <div class="row row-custom">
+    <div class="col-md-3">
+      <%= image_tag legislators[0].photo_url, class: "legislator-photos" %>
+      </br> 
+      <%= legislators[0].full_name %>
+      </br>
+      <%= legislators[0].email %>
+    </div>
+    <div class="col-md-3">
+      <%= image_tag legislators[1].photo_url, class: "legislator-photos"%>
+      </br>
+      <%= legislators[1].full_name %>
+      </br>
+      <%= legislators[1].email %>
+    </div>
+    <div class="col-md-3">
+      <%= image_tag legislators[2].photo_url, class: "legislator-photos"%>
+      </br> 
+      <%= legislators[2].full_name %>
+      </br>
+      <%= legislators[2].email %>
+    </div>
+    <div class="col-md-3">
+      <%= image_tag legislators[3].photo_url, class: "legislator-photos" %>
+      </br> 
+      <%= legislators[3].full_name %>
+      </br>
+      <%= legislators[3].email %>
+    </div>
+  </div>
+<% end %>

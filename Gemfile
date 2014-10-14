@@ -37,6 +37,8 @@ group :test do
 end
 
 group :production do
+  gem 'execjs'
+  gem 'rubyracer'
   gem 'pg'
   gem 'rails_12factor'
 end

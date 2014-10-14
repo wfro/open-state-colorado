@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :users, only: [:show, :update] do
     member do
       post "geolocate"
+      get "notifications"
     end
   end
   resources :legislators, only: [:index, :show, :destroy]
@@ -17,6 +18,4 @@ Rails.application.routes.draw do
   # custom routes for omniauth
   get "/login", to: redirect("/auth/facebook"), as: :login
   get "/logout", to: "sessions#destroy", as: :logout
-
-  # post "users/geolocate", to: "users#geolocate", as: :geolocate_user
 end

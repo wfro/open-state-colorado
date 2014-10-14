@@ -17,11 +17,6 @@
           <%= f.submit "Add my email" %>
         <% end %>
       </div>
-
-      <% @user.legislators.each do |leg| %>
-        <p><%= leg.full_name %></p>
-        <p><%= "District #{leg.district}" %></p>
-      <% end %>
     </div>
   </div>
 </div>

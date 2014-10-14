@@ -1,0 +1,4 @@
+<% @user.legislators.each do |leg| %>
+  <p><%= leg.full_name %></p>
+  <p><%= "District #{leg.district}" %></p>
+<% end %>

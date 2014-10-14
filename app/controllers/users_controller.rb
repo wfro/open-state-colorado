@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :correct_user, only: [:show, :update, :geolocate]
+  before_action :correct_user, only: [:show, :update, :geolocate, :notifications]
 
   def show
     @user = User.find(params[:id])
@@ -33,6 +33,10 @@ class UsersController < ApplicationController
       UserLegislator.create(user_id: @user.id, legislator_id: legislator.id)
     end
     redirect_to user_path(@user)
+  end
+
+  def notifications
+    @user = User.find(params[:id])
   end
 
   private

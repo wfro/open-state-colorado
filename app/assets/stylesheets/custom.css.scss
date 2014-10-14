@@ -49,10 +49,39 @@ body {
 // User show page
 .user-profile {
   text-align: center;
+  border: 2px dashed;
 }
 
-.add-district {
-  font-size: 30px;
+.initial-user-info {
+  border: 2px dashed;
+  margin: 0 auto;
+  width: 800px;
+  font-size: 44px;
+  font-weight: 100;
+}
+
+.address-email-form {
+  margin-top: 20px;
+}
+
+.address-field {
+  color: #A81313;
+  border: 2px dashed;
+}
+
+.email-field {
+  border: 2px dashed;
+  margin-top: 20px;
+  padding-left: 5px;
+  color: #0970B5;
+}
+
+.initial-user-info-subheader {
+  margin: 20px auto 0 auto;
+  margin-top: 12px;
+  font-size: 26px;
+  font-weight: 100;
+  width: 720px;
 }
 
 // Footer

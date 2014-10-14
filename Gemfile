@@ -37,6 +37,7 @@ group :test do
 end
 
 group :production do
+<<<<<<< HEAD
   gem 'execjs'
   gem 'therubyracer'
   gem 'pg'

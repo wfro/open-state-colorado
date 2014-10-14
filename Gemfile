@@ -17,9 +17,9 @@ gem 'figaro'
 gem 'redis'
 gem 'geocoder'
 
-gem 'spring',        group: :development
 
 group :development, :test do
+  gem 'spring'
   gem 'factory_girl_rails'
   gem 'rspec-rails'
   gem 'pry'

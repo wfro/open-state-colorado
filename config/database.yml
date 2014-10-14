@@ -3,15 +3,16 @@ default: &default
   encoding: unicode
   pool:     5
   timeout:  5000
+  host: localhost
 
 development:
   <<: *default
-  database: open_state_colorado_dev
+  database: wamlut_development
 
 test:
   <<: *default
-  database: open_state_colorado_test
+  database: wamlut_test
 
 production:
   <<: *default
-  url: <%= ENV['DATABASE_URL'] %>
+  database: wamlut

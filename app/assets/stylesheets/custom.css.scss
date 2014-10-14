@@ -117,7 +117,7 @@ footer {
   }
 }
 
-// Bootstrap overrides
+// custom bootstrap stuffs
 .navbar-custom {
   background-color: #A5DBE6;
   color: #DE0909;
@@ -130,5 +130,10 @@ footer {
 .navbar .nav > li > a {
   text-decoration: none;
   color:  #474747;
+}
+
+.col-md-6 {
+  border: 2px dashed;
+  text-align: center;
 }
 

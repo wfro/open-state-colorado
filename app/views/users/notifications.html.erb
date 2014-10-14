@@ -1,4 +1,18 @@
-<% @user.legislators.each do |leg| %>
-  <p><%= leg.full_name %></p>
-  <p><%= "District #{leg.district}" %></p>
-<% end %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <%= image_tag "#{@user.legislators.first.photo_url}" %>
+      </br>
+      <%= @user.legislators.first.full_name %>
+      </br>
+      <%= "District: #{@user.legislators.first.district}" %>
+    </div>
+    <div class="col-md-6">
+      <%= image_tag "#{@user.legislators.last.photo_url}" %>
+      </br>
+      <%= @user.legislators.last.full_name %>
+      </br>
+      <%= "District: #{@user.legislators.last.district}" %>
+    </div>
+  </div>
+</div>

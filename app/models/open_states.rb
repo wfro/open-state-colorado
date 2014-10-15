@@ -8,8 +8,6 @@ class OpenStates
     }.to_query
   end
 
-  # Probably not necessary to go super far back, starting with 2014 for now.
-  # Give this a better name to illustrate that
   def bills_search_string
     "bills/?" + {
       apikey: API_KEY,
@@ -27,6 +25,12 @@ class OpenStates
     }.to_query
   end
 
+  def bill_detail_search_string(external_id)
+    "bills/" + external_id + "/?" + {
+      apikey: API_KEY
+    }.to_query
+  end
+
   def geolocate_legislators(lat, long)
     connection.get(lat_long_search_string(lat, long))
   end
@@ -37,6 +41,10 @@ class OpenStates
 
   def get_bills
     connection.get(bills_search_string)
+  end
+
+  def get_bill_detail(external_id)
+    connection.get(bill_detail_search_string(external_id))
   end
 
   def connection

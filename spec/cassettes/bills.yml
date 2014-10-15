@@ -1,0 +1,113 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://openstates.org/api/v1/bills/?apikey=bfef33e0a83e4e98931765048ca24dd6&per_page=20&state=co&updated_since=2014-01-01
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.4.1 (Ubuntu)
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Authorization
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '5282'
+      Date:
+      - Wed, 15 Oct 2014 16:35:55 GMT
+      X-Varnish:
+      - '1914338842'
+      Age:
+      - '0'
+      Via:
+      - 1.1 varnish
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '[{"title": "Clean-up SB13-250 Drug Sentencing", "created_at": "2014-03-22
+        04:16:56", "updated_at": "2014-06-13 11:10:14", "id": "COB00002645", "chamber":
+        "upper", "state": "co", "session": "2014A", "type": ["bill"], "subjects":
+        [], "bill_id": "SB 14-163"}, {"title": "Insurer Investments In Real Property
+        NAIC Model", "created_at": "2014-04-23 07:11:46", "updated_at": "2014-06-13
+        11:11:05", "id": "COB00002782", "chamber": "upper", "state": "co", "session":
+        "2014A", "type": ["bill"], "subjects": [], "bill_id": "SB 14-209"}, {"title":
+        "On-demand Air Carrier Sales & Use Tax Exemption", "created_at": "2014-04-12
+        05:57:01", "updated_at": "2014-06-07 10:17:52", "id": "COB00002728", "chamber":
+        "lower", "state": "co", "session": "2014A", "type": ["bill"], "subjects":
+        [], "bill_id": "HB 14-1374"}, {"title": "Legal Standing Of Public Open Meetings
+        Law", "created_at": "2014-04-24 07:00:33", "updated_at": "2014-06-07 10:17:57",
+        "id": "COB00002785", "chamber": "lower", "state": "co", "session": "2014A",
+        "type": ["bill"], "subjects": [], "bill_id": "HB 14-1390"}, {"title": "Reentry
+        Programs For Adult Parolees", "created_at": "2014-04-04 04:51:41", "updated_at":
+        "2014-06-07 10:17:47", "id": "COB00002688", "chamber": "lower", "state": "co",
+        "session": "2014A", "type": ["bill"], "subjects": [], "bill_id": "HB 14-1355"},
+        {"title": "CO Coroners Standards And Training Board", "created_at": "2014-04-18
+        06:20:00", "updated_at": "2014-06-07 10:16:07", "id": "COB00002751", "chamber":
+        "lower", "state": "co", "session": "2014A", "type": ["bill"], "subjects":
+        [], "bill_id": "HB 14-1380"}, {"title": "Location Information After US v Jones",
+        "created_at": "2014-04-16 06:03:37", "updated_at": "2014-06-13 11:11:21",
+        "id": "COB00002740", "chamber": "upper", "state": "co", "session": "2014A",
+        "type": ["bill"], "subjects": [], "bill_id": "SB 14-193"}, {"title": "Use
+        Of Isolated Confinement Mental Illness", "created_at": "2014-01-15 00:30:50",
+        "updated_at": "2014-06-13 11:08:38", "id": "COB00002269", "chamber": "upper",
+        "state": "co", "session": "2014A", "type": ["bill"], "subjects": [], "bill_id":
+        "SB 14-064"}, {"title": "Local Accountability Reqmts For School Districts",
+        "created_at": "2014-01-31 01:23:03", "updated_at": "2014-06-07 10:16:37",
+        "id": "COB00002475", "chamber": "lower", "state": "co", "session": "2014A",
+        "type": ["bill"], "subjects": [], "bill_id": "HB 14-1202"}, {"title": "Marijuana
+        Criminal Provision Clean Up", "created_at": "2014-01-28 01:01:38", "updated_at":
+        "2014-06-13 11:11:10", "id": "COB00002424", "chamber": "upper", "state": "co",
+        "session": "2014A", "type": ["bill"], "subjects": [], "bill_id": "SB 14-129"},
+        {"title": "Tax Incentives For Alternative Fuel Trucks", "created_at": "2014-03-20
+        03:56:24", "updated_at": "2014-06-07 10:16:11", "id": "COB00002636", "chamber":
+        "lower", "state": "co", "session": "2014A", "type": ["bill"], "subjects":
+        [], "bill_id": "HB 14-1326"}, {"title": "Membership Task Force Drunk Impaired
+        Driving", "created_at": "2014-03-15 03:43:14", "updated_at": "2014-06-17 10:39:56",
+        "id": "COB00002623", "chamber": "lower", "state": "co", "session": "2014A",
+        "type": ["bill"], "subjects": [], "bill_id": "HB 14-1321"}, {"title": "Enforcing
+        Laws Against Designer Drugs", "created_at": "2014-01-09 00:23:15", "updated_at":
+        "2014-06-07 10:16:43", "id": "COB00002165", "chamber": "lower", "state": "co",
+        "session": "2014A", "type": ["bill"], "subjects": [], "bill_id": "HB 14-1037"},
+        {"title": "Requirements For A School Closure Plan", "created_at": "2014-04-18
+        06:20:22", "updated_at": "2014-06-07 10:16:31", "id": "COB00002752", "chamber":
+        "lower", "state": "co", "session": "2014A", "type": ["bill"], "subjects":
+        [], "bill_id": "HB 14-1381"}, {"title": "Sunset Continue Dental Examiners
+        Board", "created_at": "2014-01-31 01:22:30", "updated_at": "2014-06-07 10:15:41",
+        "id": "COB00002464", "chamber": "lower", "state": "co", "session": "2014A",
+        "type": ["bill"], "subjects": [], "bill_id": "HB 14-1227"}, {"title": "Clean-up
+        Bail Bond Statutes", "created_at": "2014-04-23 07:11:21", "updated_at": "2014-06-13
+        11:10:52", "id": "COB00002781", "chamber": "upper", "state": "co", "session":
+        "2014A", "type": ["bill"], "subjects": [], "bill_id": "SB 14-212"}, {"title":
+        "Firefighter Peace Officer PTSD Work Comp Coverage", "created_at": "2014-03-25
+        04:19:42", "updated_at": "2014-06-07 10:17:12", "id": "COB00002656", "chamber":
+        "lower", "state": "co", "session": "2014A", "type": ["bill"], "subjects":
+        [], "bill_id": "HB 14-1343"}, {"title": "Great-grandparent Visitation Of Grandchildren",
+        "created_at": "2014-04-08 05:08:50", "updated_at": "2014-06-07 10:18:15",
+        "id": "COB00002703", "chamber": "lower", "state": "co", "session": "2014A",
+        "type": ["bill"], "subjects": [], "bill_id": "HB 14-1362"}, {"title": "Criminal
+        Penalties For Chop Shops", "created_at": "2014-04-01 05:05:36", "updated_at":
+        "2014-06-13 11:11:16", "id": "COB00002677", "chamber": "upper", "state": "co",
+        "session": "2014A", "type": ["bill"], "subjects": [], "bill_id": "SB 14-176"},
+        {"title": "Efficient School & Community Performance Contract", "created_at":
+        "2014-04-10 05:11:14", "updated_at": "2014-06-13 11:10:46", "id": "COB00002714",
+        "chamber": "upper", "state": "co", "session": "2014A", "type": ["bill"], "subjects":
+        [], "bill_id": "SB 14-186"}]'
+    http_version: 
+  recorded_at: Wed, 15 Oct 2014 16:33:56 GMT
+recorded_with: VCR 2.9.3

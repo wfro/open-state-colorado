@@ -28,10 +28,26 @@ RSpec.describe OpenStates, type: :model do
     end
   end
 
+  describe "external requests" do
+    it "queries CO legislators" do
+      VCR.use_cassette('legislators') do
+        response = open_states.get_legislators
+        expect(response.status).to eq 200
+      end
+    end
+
+    it "queries bills" do
+      VCR.use_cassette('bills') do
+        response = open_states.get_bills
+        expect(response.status).to eq 200
+      end
+    end
+  end
+
   describe "#connection" do
     it "returns a Faraday connection object" do
-      result = OpenStates.new.connection
-      expect(result.class).to eq Faraday::Connection
+      connection = OpenStates.new.connection
+      expect(connection).to be_an_instance_of(Faraday::Connection)
     end
   end
 end

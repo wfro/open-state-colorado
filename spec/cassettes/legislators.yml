@@ -1,0 +1,1074 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://openstates.org/api/v1/legislators/?apikey=bfef33e0a83e4e98931765048ca24dd6&state=co
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.4.1 (Ubuntu)
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Authorization
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '95780'
+      Date:
+      - Wed, 15 Oct 2014 16:02:44 GMT
+      X-Varnish:
+      - '1914263802'
+      Age:
+      - '0'
+      Via:
+      - 1.1 varnish
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '[{"last_name": "Priola", "updated_at": "2014-10-15 12:36:03", "full_name":
+        "Kevin Priola", "id": "COL000036", "first_name": "Kevin", "middle_name": "",
+        "district": "56", "+occupation": "Small Business Owner ", "state": "co", "votesmart_id":
+        "106512", "party": "Republican", "suffixes": "", "email": "kpriola@gmail.com",
+        "all_ids": ["COL000036", "COL000142"], "leg_id": "COL000036", "active": true,
+        "transparencydata_id": "3434c15d654b41fcb4f5e18a6d04c8f6", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/6148D914B28D89168725794300729C2F/$FILE/H-Priola.jpg",
+        "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=56&chamber=house",
+        "country": "us", "created_at": "2012-01-19 01:01:48", "chamber": "lower",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-2912",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "+phone": "303 866 2912"}, {"last_name": "Scott", "updated_at": "2014-10-15
+        12:36:03", "full_name": "Ray Scott", "id": "COL000037", "first_name": "Ray",
+        "middle_name": "", "district": "55", "+occupation": "Business Owner", "state":
+        "co", "votesmart_id": "125544", "party": "Republican", "suffixes": "", "email":
+        "ray.scott.house@state.co.us", "all_ids": ["COL000037", "COL000145"], "leg_id":
+        "COL000037", "active": true, "transparencydata_id": "9d80b1c370074c85b1697698b8ab8151",
+        "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/C5A2F012AC479FE687257AB0005A0FE9/$FILE/H-Scott.jpg",
+        "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=55&chamber=house",
+        "country": "us", "created_at": "2012-01-19 01:01:48", "chamber": "lower",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-3068",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "+phone": "303 866 3068"}, {"last_name": "Vigil", "updated_at": "2014-10-15
+        12:36:03", "full_name": "Edward Vigil", "id": "COL000042", "first_name": "Edward",
+        "middle_name": "", "district": "62", "chamber": "lower", "state": "co", "votesmart_id":
+        "82278", "party": "Democratic", "suffixes": "", "email": "edvigil1@gmail.com",
+        "all_ids": ["COL000042"], "leg_id": "COL000042", "active": true, "transparencydata_id":
+        "23047cb3dedb4befb350d2cc5c86e208", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/1C5317C2AA119E078725794300729C1F/$FILE/H-Vigil.jpg",
+        "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=62&chamber=house",
+        "country": "us", "created_at": "2012-01-19 01:01:48", "+occupation": "Small
+        Business Owner", "offices": [{"fax": null, "name": "Capitol Office", "phone":
+        "303-866-2916", "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol",
+        "email": null}], "+phone": "303 866 2916"}, {"last_name": "Schafer", "updated_at":
+        "2014-10-15 12:36:02", "full_name": "Sue Schafer", "id": "COL000047", "first_name":
+        "Sue", "middle_name": "", "district": "24", "chamber": "lower", "state": "co",
+        "votesmart_id": "106490", "party": "Democratic", "email": "sue.schafer.house@state.co.us",
+        "all_ids": ["COL000047", "COL000121", "COL000149"], "leg_id": "COL000047",
+        "active": true, "transparencydata_id": "e979deb8242c456ba73f6c8fbd0614a4",
+        "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/27EC2722B0EE802F8725794300729C3D/$FILE/H-Schafer.jpg",
+        "+phone": "303 866 5522", "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=24&chamber=house",
+        "country": "us", "created_at": "2012-01-19 01:01:49", "+occupation": "Educator/
+        Small Business Owner", "offices": [{"fax": null, "name": "Capitol Office",
+        "phone": "303-866-5522", "address": "200 E. Colfax\nDenver, CO 80203", "type":
+        "capitol", "email": null}], "suffixes": ""}, {"last_name": "Gerou", "updated_at":
+        "2014-10-15 12:36:03", "full_name": "Cheri Gerou", "id": "COL000048", "first_name":
+        "Cheri", "middle_name": "", "district": "25", "chamber": "lower", "state":
+        "co", "votesmart_id": "106496", "party": "Republican", "suffixes": "", "email":
+        "cheri.gerou@gmail.com", "all_ids": ["COL000048"], "leg_id": "COL000048",
+        "active": true, "transparencydata_id": "42aa43dbf8084ed3b1df1a8109b70333",
+        "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/5763BD219E7856798725794300729C19/$FILE/H-Gerou.jpg",
+        "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=25&chamber=house",
+        "country": "us", "created_at": "2012-01-19 01:01:49", "+occupation": "Architect",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-2582",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "+phone": "303 866 2582"}, {"last_name": "Szabo", "updated_at": "2014-10-15
+        12:36:02", "full_name": "Libby Szabo", "id": "COL000050", "first_name": "Libby",
+        "middle_name": "", "district": "27", "chamber": "lower", "state": "co", "votesmart_id":
+        "106402", "party": "Republican", "suffixes": "", "email": "libby.szabo.house@state.co.us",
+        "all_ids": ["COL000050"], "leg_id": "COL000050", "active": true, "transparencydata_id":
+        "986012bedb4e42d0bf543313f33ce7fa", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/CB1EB2F78C6E4EB68725794300729BFE/$FILE/H-Szabo.jpg",
+        "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=27&chamber=house",
+        "country": "us", "created_at": "2012-01-19 01:01:49", "+occupation": "Business
+        Woman", "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-2962",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "+phone": "303 866 2962"}, {"last_name": "Stephens", "updated_at":
+        "2014-10-15 12:36:02", "full_name": "Amy Stephens", "id": "COL000051", "first_name":
+        "Amy", "middle_name": "", "district": "19", "+occupation": "Consultant", "state":
+        "co", "votesmart_id": "65850", "party": "Republican", "suffixes": "", "email":
+        "amy.stephens.house@state.co.us", "all_ids": ["COL000051", "COL000140"], "leg_id":
+        "COL000051", "active": true, "transparencydata_id": "130f045545d24f5f9337dabd11321134",
+        "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/1AEC04A80B9508AA8725794300729BF8/$FILE/H-Stephens.jpg",
+        "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=19&chamber=house",
+        "country": "us", "created_at": "2012-01-19 01:01:49", "chamber": "lower",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-2924",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "+phone": "303 866 2348"}, {"last_name": "Gardner", "updated_at":
+        "2014-10-15 12:36:03", "full_name": "Bob Gardner", "id": "COL000052", "first_name":
+        "Bob", "middle_name": "", "district": "20", "+occupation": "Attorney", "state":
+        "co", "votesmart_id": "65710", "party": "Republican", "suffixes": "", "email":
+        "bob.gardner.house@state.co.us", "all_ids": ["COL000052", "COL000123", "COL000153"],
+        "leg_id": "COL000052", "active": true, "transparencydata_id": "bd9e9afe41544b7c9e6489fca76b7db8",
+        "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/3E4AA1669FB61FEB8725794300729C10/$FILE/H-Gardner.jpg",
+        "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=20&chamber=house",
+        "country": "us", "created_at": "2012-01-19 01:01:49", "chamber": "lower",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-2191",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "+phone": "303 866 2191"}, {"last_name": "Tyler", "updated_at": "2014-10-15
+        12:36:03", "full_name": "Max Tyler", "id": "COL000054", "first_name": "Max",
+        "middle_name": "", "district": "23", "chamber": "lower", "state": "co", "votesmart_id":
+        "111208", "party": "Democratic", "suffixes": "", "email": "max@maxtyler.us",
+        "all_ids": ["COL000054"], "leg_id": "COL000054", "active": true, "transparencydata_id":
+        "5e78c68adf6049b4aba16d1048acafd8", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/624DD08C5BB61EC68725794300729C00/$FILE/H-Tyler.jpg",
+        "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=23&chamber=house",
+        "country": "us", "created_at": "2012-01-19 01:01:49", "+occupation": "Legislator",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-2951",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "+phone": "303 866 2951"}, {"last_name": "Holbert", "updated_at":
+        "2014-10-15 12:36:03", "full_name": "Chris Holbert", "id": "COL000057", "first_name":
+        "Chris", "middle_name": "", "district": "44", "chamber": "lower", "state":
+        "co", "votesmart_id": "125519", "party": "Republican", "suffixes": "", "email":
+        "chris.holbert.house@state.co.us", "all_ids": ["COL000057"], "leg_id": "COL000057",
+        "active": true, "transparencydata_id": "b7b5ec56d57146e8a7cf3b1cfc852b88",
+        "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/07374103EB7983408725794300729C0C/$FILE/H-Holbert.jpg",
+        "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=44&chamber=house",
+        "country": "us", "created_at": "2012-01-19 01:01:49", "+occupation": "Consultant",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-2933",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "+phone": "303 866 2933"}, {"last_name": "Murray", "updated_at": "2014-10-15
+        12:36:03", "full_name": "Carole Murray", "id": "COL000058", "first_name":
+        "Carole", "middle_name": "", "district": "45", "+occupation": "Retired", "state":
+        "co", "votesmart_id": "106587", "party": "Republican", "email": "murrayhouse45@gmail.com",
+        "all_ids": ["COL000058"], "leg_id": "COL000058", "active": true, "transparencydata_id":
+        "bd74c3adce5746caa5eb0d8dc7433614", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/9B741CEAE1C8F0E88725794300729C37/$FILE/H-Murray.jpg",
+        "+phone": "303 866 2948", "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=45&chamber=house",
+        "country": "us", "created_at": "2012-01-19 01:01:49", "chamber": "lower",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-2948",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "suffixes": ""}, {"last_name": "Fields", "updated_at": "2014-10-15
+        12:36:03", "full_name": "Rhonda Fields", "id": "COL000059", "first_name":
+        "Rhonda", "middle_name": "", "district": "42", "chamber": "lower", "state":
+        "co", "votesmart_id": "128419", "party": "Democratic", "suffixes": "", "email":
+        "rhonda.fields.house@state.co.us", "all_ids": ["COL000059"], "leg_id": "COL000059",
+        "active": true, "transparencydata_id": "9fcd10fe67b44a48be846e44a3c7f403",
+        "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/F527A7B2F2C4260F8725794300729BEF/$FILE/H-Fields.jpg",
+        "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=42&chamber=house",
+        "country": "us", "created_at": "2012-01-19 01:01:49", "+occupation": "Legislator",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-3911",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "+phone": "303 866 3911"}, {"last_name": "McNulty", "updated_at":
+        "2014-10-15 12:36:03", "full_name": "Frank McNulty", "id": "COL000060", "first_name":
+        "Frank", "middle_name": "", "district": "43", "+occupation": "Attorney", "state":
+        "co", "votesmart_id": "65365", "party": "Republican", "all_ids": ["COL000060"],
+        "leg_id": "COL000060", "active": true, "transparencydata_id": "3e8112128392458486edd3277d43f49a",
+        "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/7C9E7880495E84CB8725794300729C0F/$FILE/H-McNulty.jpg",
+        "+phone": "303 866 2346", "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=43&chamber=house",
+        "country": "us", "created_at": "2012-01-19 01:01:49", "chamber": "lower",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-2936",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "suffixes": ""}, {"last_name": "Labuda", "updated_at": "2014-10-15
+        12:36:03", "full_name": "Jeanne Labuda", "id": "COL000063", "first_name":
+        "Jeanne", "middle_name": "", "district": "1", "chamber": "lower", "state":
+        "co", "votesmart_id": "65497", "party": "Democratic", "suffixes": "", "email":
+        "jeanne.labuda.house@state.co.us", "all_ids": ["COL000063"], "leg_id": "COL000063",
+        "active": true, "transparencydata_id": "22d07367148d4e839b44954c55708667",
+        "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/60D51906BCC2FFE48725794300729C09/$FILE/H-Labuda.jpg",
+        "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=1&chamber=house",
+        "country": "us", "created_at": "2012-01-19 01:01:49", "+occupation": "Attorney",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-2966",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "+phone": "303 866 2966"}, {"last_name": "Peniston", "updated_at":
+        "2014-10-15 12:36:03", "full_name": "Cherylin Peniston", "id": "COL000064",
+        "first_name": "Cherylin", "middle_name": "", "district": "35", "+occupation":
+        "Retired Teacher", "state": "co", "votesmart_id": "66084", "party": "Democratic",
+        "email": "cherylin.peniston.house@state.co.us", "all_ids": ["COL000064"],
+        "leg_id": "COL000064", "active": true, "transparencydata_id": "a9cc1a11ca6842b8be89977157c242e3",
+        "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/2CDC8F415D4FA3F68725794300729C40/$FILE/H-Peniston.jpg",
+        "+phone": "303 866 2843", "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=35&chamber=house",
+        "country": "us", "created_at": "2012-01-19 01:01:49", "chamber": "lower",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-2843",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "suffixes": ""}, {"last_name": "Kagan", "updated_at": "2014-10-15
+        12:36:03", "full_name": "Daniel Kagan", "id": "COL000065", "first_name": "Daniel",
+        "middle_name": "", "district": "3", "+occupation": "Legislator", "state":
+        "co", "votesmart_id": "111194", "party": "Democratic", "email": "repkagan@gmail.com",
+        "all_ids": ["COL000065"], "leg_id": "COL000065", "active": true, "transparencydata_id":
+        "5e496dfbe6a743eea404e41173858671", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/89C69E16D812629C8725794300729BF4/$FILE/H-Kagan.jpg",
+        "+phone": "303 866 2921", "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=3&chamber=house",
+        "country": "us", "created_at": "2012-01-19 01:01:49", "chamber": "lower",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-2921",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "suffixes": ""}, {"last_name": "Ferrandino", "updated_at": "2014-10-15
+        12:35:40", "full_name": "Mark Ferrandino", "id": "COL000066", "first_name":
+        "Mark", "middle_name": "", "district": "2", "chamber": "lower", "state": "co",
+        "votesmart_id": "101871", "party": "Democratic", "suffixes": "", "email":
+        "mferrandino@yahoo.com", "all_ids": ["COL000066"], "leg_id": "COL000066",
+        "active": true, "transparencydata_id": "30913b6f235a4ea18641733b2f57a846",
+        "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/1C9DF7F511A9A06B8725794300729C41/$FILE/H-Speaker
+        Ferrandino.jpg", "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=2&chamber=house",
+        "country": "us", "created_at": "2012-01-19 01:01:49", "+occupation": "Legislator",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-2346",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "+phone": "303 866 5523"}, {"last_name": "Duran", "updated_at": "2014-10-15
+        12:35:40", "full_name": "Crisanta Duran", "id": "COL000067", "first_name":
+        "Crisanta", "middle_name": "", "district": "5", "+occupation": "Attorney",
+        "state": "co", "votesmart_id": "125477", "party": "Democratic", "email": "crisanta.duran.house@state.co.us",
+        "all_ids": ["COL000067"], "leg_id": "COL000067", "active": true, "transparencydata_id":
+        "75bb4e6db9f946caa09e9d84256b85a8", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/5FFF7423418823C88725794300729C38/$FILE/H-Duran.jpg",
+        "+phone": "303 866 2925", "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=5&chamber=house",
+        "country": "us", "created_at": "2012-01-19 01:01:49", "chamber": "lower",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-2925",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "suffixes": ""}, {"last_name": "Pabon", "updated_at": "2014-10-15
+        12:36:03", "full_name": "Daniel Pabon", "id": "COL000068", "first_name": "Daniel",
+        "middle_name": "", "district": "4", "chamber": "lower", "state": "co", "votesmart_id":
+        "125473", "party": "Democratic", "email": "dan.pabon.house@state.co.us", "all_ids":
+        ["COL000068"], "leg_id": "COL000068", "active": true, "transparencydata_id":
+        "c291c5fdc6e14e09bcc1383f1be19754", "nickname": "Dan", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/A170ED3D5977DB538725794300729C1B/$FILE/H-Pabon.jpg",
+        "+phone": "303 866 2954", "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=4&chamber=house",
+        "country": "us", "created_at": "2012-01-19 01:01:49", "+occupation": "Engineer/
+        Attorney", "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-2954",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "suffixes": ""}, {"last_name": "Williams", "updated_at": "2014-10-15
+        12:36:03", "full_name": "Angela Williams", "id": "COL000069", "first_name":
+        "Angela", "middle_name": "", "district": "7", "+occupation": "Self-Employed",
+        "state": "co", "votesmart_id": "125479", "party": "Democratic", "email": "angela.williams.house@state.co.us",
+        "all_ids": ["COL000069"], "leg_id": "COL000069", "active": true, "transparencydata_id":
+        "c04e96c9d50f42f589a8409492d24aea", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/8CCD2932170CDF158725794300729C0A/$FILE/H-Williams.jpg",
+        "+phone": "303 866 2909", "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=7&chamber=house",
+        "country": "us", "created_at": "2012-01-19 01:01:49", "chamber": "lower",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-2909",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "suffixes": ""}, {"last_name": "Court", "updated_at": "2014-10-15
+        12:36:03", "full_name": "Lois Court", "id": "COL000070", "first_name": "Lois",
+        "middle_name": "", "district": "6", "chamber": "lower", "state": "co", "votesmart_id":
+        "106446", "party": "Democratic", "suffixes": "", "email": "lois.court.house@state.co.us",
+        "all_ids": ["COL000070"], "leg_id": "COL000070", "active": true, "transparencydata_id":
+        "6b4a2efd5fbc473da239772a29ceb2a4", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/091E315323C0A9B28725794300729C3B/$FILE/H-Court.jpg",
+        "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=6&chamber=house",
+        "country": "us", "created_at": "2012-01-19 01:01:49", "+occupation": "Community
+        College Instructor/Legislator", "offices": [{"fax": null, "name": "Capitol
+        Office", "phone": "303-866-2967", "address": "200 E. Colfax\nDenver, CO 80203",
+        "type": "capitol", "email": null}], "+phone": "303 866 2967"}, {"last_name":
+        "McCann", "updated_at": "2014-10-15 12:36:02", "full_name": "Elizabeth \"Beth\"
+        McCann", "id": "COL000072", "first_name": "Elizabeth \"Beth\"", "middle_name":
+        "", "district": "8", "chamber": "lower", "state": "co", "votesmart_id": "106453",
+        "party": "Democratic", "email": "beth.mccann.house@state.co.us", "all_ids":
+        ["COL000072"], "leg_id": "COL000072", "active": true, "transparencydata_id":
+        "6a95b8f3cb7046a28c7167389b59555d", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/DF9265DF19170AEC8725794300729BFF/$FILE/H-McCann.jpg",
+        "+phone": "303 866 2959", "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=8&chamber=house",
+        "country": "us", "created_at": "2012-01-19 01:01:49", "+occupation": "Legislator",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-2959",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "suffixes": ""}, {"last_name": "Conti", "updated_at": "2014-10-15
+        12:36:03", "full_name": "Kathleen Conti", "id": "COL000076", "first_name":
+        "Kathleen", "middle_name": "", "district": "38", "+occupation": "Legislator",
+        "state": "co", "votesmart_id": "125511", "party": "Republican", "email": "kathleen.conti.house@state.co.us",
+        "all_ids": ["COL000076"], "leg_id": "COL000076", "active": true, "transparencydata_id":
+        "9e8798904d7e4d8893caa145b83b31ff", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/F61982FD129FEF938725794300729C34/$FILE/H-Conti.jpg",
+        "+phone": "303 866 2953", "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=38&chamber=house",
+        "country": "us", "created_at": "2012-01-19 01:01:49", "chamber": "lower",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-2953",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "suffixes": ""}, {"last_name": "Coram", "updated_at": "2014-10-15
+        12:36:03", "full_name": "Don Coram", "id": "COL000078", "first_name": "Don",
+        "middle_name": "", "district": "58", "+occupation": "Rancher/Mining", "state":
+        "co", "votesmart_id": "125548", "party": "Republican", "email": "don.coram.house@state.co.us",
+        "all_ids": ["COL000078"], "leg_id": "COL000078", "active": true, "transparencydata_id":
+        "e15f17aeeddf476c95480247bbfa93dc", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/1802428CFB0A80118725794300729C3F/$FILE/H-Coram.jpg",
+        "+phone": "303 866 2955", "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=58&chamber=house",
+        "country": "us", "created_at": "2012-01-19 01:01:49", "chamber": "lower",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-2955",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "suffixes": ""}, {"last_name": "Hullinghorst", "updated_at": "2014-10-15
+        12:35:40", "full_name": "Dickey Lee Hullinghorst", "id": "COL000080", "first_name":
+        "Dickey Lee", "middle_name": "", "district": "10", "+occupation": "Retired
+        Gov. Affairs", "state": "co", "votesmart_id": "106463", "party": "Democratic",
+        "suffixes": "", "email": "dl.hullinghorst.house@state.co.us", "all_ids": ["COL000080"],
+        "leg_id": "COL000080", "active": true, "transparencydata_id": "3f7d82e5dd704967bd7229ebed0820d1",
+        "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/D0941D9D8784490E8725794300729C11/$FILE/H-Hullinghorst.jpg",
+        "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=10&chamber=house",
+        "country": "us", "created_at": "2012-01-19 01:01:49", "chamber": "lower",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-2348",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "+phone": "303 866 2915"}, {"last_name": "Waller", "updated_at": "2014-10-15
+        12:36:03", "full_name": "Mark Waller", "id": "COL000083", "first_name": "Mark",
+        "middle_name": "", "district": "15", "chamber": "lower", "state": "co", "votesmart_id":
+        "106471", "party": "Republican", "suffixes": "", "email": "mark.waller.house@state.co.us",
+        "all_ids": ["COL000083"], "leg_id": "COL000083", "active": true, "transparencydata_id":
+        "f3e0272bde9d4ffaac84a93830df8833", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/B22A313BB84F3FA98725794300729C45/$FILE/H-Waller.jpg",
+        "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=15&chamber=house",
+        "country": "us", "created_at": "2012-01-19 01:01:49", "+occupation": "Attorney",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-5523",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "+phone": "303 866 5525"}, {"last_name": "Joshi", "updated_at": "2014-10-15
+        12:36:03", "full_name": "Janak Joshi", "id": "COL000084", "first_name": "Janak",
+        "middle_name": "", "district": "16", "chamber": "lower", "state": "co", "votesmart_id":
+        "125491", "party": "Republican", "email": "janak.joshi.house@state.co.us",
+        "all_ids": ["COL000084", "COL000139", "COL000150", "COL000154", "COL000155"],
+        "leg_id": "COL000084", "active": true, "transparencydata_id": "ef0abe81d6d2437fa928fcf6b88ff5c4",
+        "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/573973BB290BF9528725794300729C2C/$FILE/H-Joshi.jpg",
+        "+phone": "303 866 2937", "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=16&chamber=house",
+        "country": "us", "created_at": "2012-01-19 01:01:49", "+occupation": "Physician,
+        Retired", "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-2937",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "suffixes": ""}, {"last_name": "Lee", "updated_at": "2014-10-15 12:36:03",
+        "full_name": "Sanford E \"Pete\" Lee", "id": "COL000088", "first_name": "Pete
+        E \"Pete\"", "middle_name": "", "district": "18", "chamber": "lower", "state":
+        "co", "votesmart_id": "106254", "party": "Democratic", "email": "pete.lee.house@state.co.us",
+        "all_ids": ["COL000088", "COL000158"], "leg_id": "COL000088", "active": true,
+        "transparencydata_id": "24afc019efa94664ac82cf044e8e2175", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/85F565997B83BCE68725794300729C43/$FILE/H-Lee.jpg",
+        "+phone": "303 866 2932", "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=18&chamber=house",
+        "country": "us", "created_at": "2012-01-19 01:01:49", "+occupation": "Attorney/
+        Businessman", "offices": [{"fax": null, "name": "Capitol Office", "phone":
+        "303-866-2932", "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol",
+        "email": null}], "suffixes": ""}, {"last_name": "Hamner", "updated_at": "2014-10-15
+        12:36:03", "full_name": "Millie Hamner", "id": "COL000090", "first_name":
+        "Millie", "middle_name": "", "district": "61", "+occupation": "Retired Superintendent
+        of Schools", "state": "co", "votesmart_id": "128652", "party": "Democratic",
+        "suffixes": "", "email": "millie.hamner.house@state.co.us", "all_ids": ["COL000090",
+        "COL000117"], "leg_id": "COL000090", "active": true, "transparencydata_id":
+        "596e25ae8eb64097bc4adb3294cd2c81", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/02DA2E6BEF4F58AC8725794300729C46/$FILE/H-Hamner.jpg",
+        "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=61&chamber=house",
+        "country": "us", "created_at": "2012-01-19 01:01:49", "chamber": "lower",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-2952",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "+phone": "303 866 2952"}, {"last_name": "DelGrosso", "updated_at":
+        "2014-10-15 12:36:03", "full_name": "Brian DelGrosso", "id": "COL000091",
+        "first_name": "Brian", "middle_name": "", "district": "51", "+occupation":
+        "Small Business Owner", "state": "co", "votesmart_id": "115668", "party":
+        "Republican", "email": "brian.delgrosso.house@state.co.us", "all_ids": ["COL000091"],
+        "leg_id": "COL000091", "active": true, "transparencydata_id": "a3b44e2a8d154ba2bfce2f0dbaeb735d",
+        "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/50A64F77E95E5EA28725794300729C17/$FILE/H-DelGrosso.jpg",
+        "+phone": "303 866 2947", "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=51&chamber=house",
+        "country": "us", "created_at": "2012-01-19 01:01:49", "chamber": "lower",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-2947",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "suffixes": ""}, {"last_name": "Ryden", "updated_at": "2014-10-15
+        12:36:03", "full_name": "Su Ryden", "id": "COL000092", "first_name": "Su",
+        "middle_name": "", "district": "36", "+occupation": "Legislator", "state":
+        "co", "votesmart_id": "106538", "party": "Democratic", "email": "su.ryden.house@state.co.us",
+        "all_ids": ["COL000092"], "leg_id": "COL000092", "active": true, "transparencydata_id":
+        "c79686027c9c46bb972f3391215f1ebe", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/9210C31639212B118725794300729C27/$FILE/H-Ryden.jpg",
+        "+phone": "303 866 2942", "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=36&chamber=house",
+        "country": "us", "created_at": "2012-01-19 01:01:49", "chamber": "lower",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-2942",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "suffixes": ""}, {"last_name": "Fischer", "updated_at": "2014-10-15
+        12:36:03", "full_name": "Randolph Fischer", "id": "COL000093", "first_name":
+        "Randolph", "middle_name": "", "district": "53", "chamber": "lower", "state":
+        "co", "votesmart_id": "68231", "party": "Democratic", "email": "randyfischer@frii.com",
+        "all_ids": ["COL000093"], "leg_id": "COL000093", "active": true, "transparencydata_id":
+        "9b696f647621401baa2cd6e7522cd356", "nickname": "Randy", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/B1C7301F092EC6998725794300729C33/$FILE/H-Fischer.jpg",
+        "+phone": "303 866 2917", "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=53&chamber=house",
+        "country": "us", "created_at": "2012-01-19 01:01:49", "+occupation": "Consulting
+        Engineer/ State Legislator", "offices": [{"fax": null, "name": "Capitol Office",
+        "phone": "303-866-2917", "address": "200 E. Colfax\nDenver, CO 80203", "type":
+        "capitol", "email": null}], "suffixes": ""}, {"last_name": "Swalm", "updated_at":
+        "2014-10-15 12:36:03", "full_name": "Spencer Swalm", "id": "COL000097", "first_name":
+        "Spencer", "middle_name": "", "district": "37", "chamber": "lower", "state":
+        "co", "votesmart_id": "65730", "party": "Republican", "suffixes": "", "email":
+        "spencer.swalm.house@state.co.us", "all_ids": ["COL000097"], "leg_id": "COL000097",
+        "active": true, "transparencydata_id": "d0b20e13260f497784cc2f1b890bd59f",
+        "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/0A0D4C69FAC707C28725794300729C13/$FILE/H-Swalm.jpg",
+        "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=37&chamber=house",
+        "country": "us", "created_at": "2012-01-19 01:01:49", "+occupation": "Employee
+        Benefit Broker", "offices": [{"fax": null, "name": "Capitol Office", "phone":
+        "303-866-5510", "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol",
+        "email": null}], "+phone": "303 866 5510"}, {"last_name": "Young", "updated_at":
+        "2014-10-15 12:36:03", "full_name": "Dave Young", "id": "COL000100", "first_name":
+        "Dave", "middle_name": "", "district": "50", "chamber": "lower", "state":
+        "co", "votesmart_id": "134314", "party": "Democratic", "csrfmiddlewaretoken":
+        "6W0EVxLP4KAC1iZ0gGYjHaREUO0HtFaK", "email": "dave.young.house@state.co.us",
+        "all_ids": ["COL000100"], "leg_id": "COL000100", "active": true, "transparencydata_id":
+        "84bd3d27a34647828406d6f1f21db8f9", "nickname": "", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/F286439C50BF60CC8725794300729BEC/$FILE/H-Young.jpg",
+        "+phone": "303 866 2929", "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=50&chamber=house",
+        "country": "us", "created_at": "2012-01-19 01:01:49", "+occupation": "College
+        Instructor", "offices": [{"fax": null, "name": "Capitol Office", "phone":
+        "303-866-2929", "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol",
+        "email": null}], "suffixes": ""}, {"last_name": "May", "updated_at": "2014-10-15
+        12:35:40", "full_name": "Jenise May", "id": "COL000112", "first_name": "Jenise",
+        "middle_name": "", "district": "30", "+occupation": "Legislator", "state":
+        "co", "party": "Democratic", "email": "jenise.may.house@state.co.us", "all_ids":
+        ["COL000112"], "leg_id": "COL000112", "active": true, "transparencydata_id":
+        "0caf5fb139764c3ea0d615b1c9f7a6e2", "nickname": "", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/B145914E62FF067887257AB00052F8B6/$FILE/H-May.jpg",
+        "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=30&chamber=house",
+        "created_at": "2013-01-07 15:39:03", "chamber": "lower", "offices": [{"fax":
+        null, "name": "Capitol Office", "phone": "303-866-2945", "address": "200 E.
+        Colfax\nDenver, CO 80203", "type": "capitol", "email": null}], "suffixes":
+        ""}, {"last_name": "Wright", "updated_at": "2014-10-15 12:36:02", "full_name":
+        "Jared Wright", "id": "COL000113", "first_name": "Jared", "middle_name": "",
+        "district": "54", "+occupation": "Self Employed/ Consultant", "state": "co",
+        "party": "Republican", "email": "jared.wright.house@state.co.us", "all_ids":
+        ["COL000113"], "leg_id": "COL000113", "active": true, "transparencydata_id":
+        "c4817e25525d4d718516db27c7968056", "nickname": "", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/99AA36BDEF7481368725794300729C22/$FILE/H-Wright.jpg",
+        "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=54&chamber=house",
+        "created_at": "2013-01-07 15:39:03", "chamber": "lower", "offices": [{"fax":
+        null, "name": "Capitol Office", "phone": "303-866-2583", "address": "200 E.
+        Colfax\nDenver, CO 80203", "type": "capitol", "email": null}], "suffixes":
+        ""}, {"last_name": "Pettersen", "updated_at": "2014-10-15 12:36:03", "full_name":
+        "Brittany Pettersen", "id": "COL000114", "first_name": "Brittany", "middle_name":
+        "", "district": "28", "chamber": "lower", "state": "co", "party": "Democratic",
+        "email": "brittany.pettersen.house@state.co.us", "all_ids": ["COL000114"],
+        "leg_id": "COL000114", "active": true, "transparencydata_id": "7fdf527b3b4543d29c54e6147ac516ac",
+        "nickname": "", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/B97EBEA89C5F36258725794300729BED/$FILE/H-Pettersen.jpg",
+        "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=28&chamber=house",
+        "created_at": "2013-01-07 15:39:03", "+occupation": "Legislator", "offices":
+        [{"fax": null, "name": "Capitol Office", "phone": "303-866-2939", "address":
+        "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email": null}], "suffixes":
+        ""}, {"last_name": "Kraft-Tharp", "updated_at": "2014-10-15 12:36:03", "full_name":
+        "Tracy Kraft-Tharp", "id": "COL000115", "first_name": "Tracy", "middle_name":
+        "", "district": "29", "chamber": "lower", "state": "co", "party": "Democratic",
+        "email": "reptracy29@gmail.com", "all_ids": ["COL000115"], "leg_id": "COL000115",
+        "active": true, "transparencydata_id": "05c9c06e1ae84e61b2437ae745c46738",
+        "nickname": "", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/0808A445302126A78725794300729C29/$FILE/H-Kraft-Tharp.jpg",
+        "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=29&chamber=house",
+        "created_at": "2013-01-07 15:39:03", "+occupation": "Small Business ", "offices":
+        [{"fax": null, "name": "Capitol Office", "phone": "303-866-2950", "address":
+        "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email": null}], "suffixes":
+        ""}, {"last_name": "Wilson", "updated_at": "2014-10-15 12:36:03", "full_name":
+        "James \"Jim\" D. Wilson", "id": "COL000116", "first_name": "James \"Jim\"",
+        "middle_name": "D.", "district": "60", "+occupation": "Retired", "state":
+        "co", "party": "Republican", "csrfmiddlewaretoken": "6W0EVxLP4KAC1iZ0gGYjHaREUO0HtFaK",
+        "email": "james.wilson.house@state.co.us", "all_ids": ["COL000116"], "leg_id":
+        "COL000116", "active": true, "transparencydata_id": "fc65dccca6a041b0bc83b3864664b26e",
+        "nickname": "", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/F9E80D501C9556928725794300729BFD/$FILE/H-Wilson.jpg",
+        "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=60&chamber=house",
+        "created_at": "2013-01-07 15:39:03", "chamber": "lower", "offices": [{"fax":
+        null, "name": "Capitol Office", "phone": "303-866-2747", "address": "200 E.
+        Colfax\nDenver, CO 80203", "type": "capitol", "email": null}], "suffixes":
+        ""}, {"last_name": "Saine", "updated_at": "2014-10-15 12:36:03", "full_name":
+        "Lori Saine", "id": "COL000118", "first_name": "Lori", "middle_name": "",
+        "district": "63", "+occupation": "Sales Director", "state": "co", "party":
+        "Republican", "email": "lori.saine.house@state.co.us", "all_ids": ["COL000118"],
+        "leg_id": "COL000118", "active": true, "transparencydata_id": "4582244408874feba62e151079c9e86e",
+        "nickname": "", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/D985724ED539C8538725794300729C0B/$FILE/H-Saine.jpg",
+        "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=63&chamber=house",
+        "created_at": "2013-01-07 15:39:03", "chamber": "lower", "offices": [{"fax":
+        null, "name": "Capitol Office", "phone": "303-866-2906", "address": "200 E.
+        Colfax\nDenver, CO 80203", "type": "capitol", "email": null}], "suffixes":
+        ""}, {"last_name": "Dore", "updated_at": "2014-10-15 12:36:03", "full_name":
+        "Timothy Dore", "id": "COL000119", "first_name": "Timothy", "middle_name":
+        "", "district": "64", "+occupation": "Attorney", "state": "co", "party": "Republican",
+        "email": "tim.dore.house@state.co.us", "all_ids": ["COL000119"], "leg_id":
+        "COL000119", "active": true, "transparencydata_id": "9f477a5ff7a4486fb981346a25751f69",
+        "nickname": "", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/7185A3AE365803FB8725794300729C31/$FILE/H-Dore.jpg",
+        "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=64&chamber=house",
+        "created_at": "2013-01-07 15:39:03", "chamber": "lower", "offices": [{"fax":
+        null, "name": "Capitol Office", "phone": "303-866-2398", "address": "200 E.
+        Colfax\nDenver, CO 80203", "type": "capitol", "email": null}], "suffixes":
+        ""}, {"last_name": "Moreno", "updated_at": "2014-10-15 12:36:03", "full_name":
+        "Dominick Moreno", "id": "COL000120", "first_name": "Dominick", "middle_name":
+        "", "district": "32", "chamber": "lower", "state": "co", "party": "Democratic",
+        "email": "dominick.moreno.house@state.co.us", "all_ids": ["COL000120"], "leg_id":
+        "COL000120", "active": true, "transparencydata_id": "da86c41cfbd04fcfad8cf1f7147ae5ca",
+        "nickname": "", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/700BE6A85418A5B38725794300729C1C/$FILE/H-Moreno.jpg",
+        "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=32&chamber=house",
+        "created_at": "2013-01-07 15:39:03", "+occupation": "Legislator", "offices":
+        [{"fax": null, "name": "Capitol Office", "phone": "303-866-2964", "address":
+        "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email": null}], "suffixes":
+        ""}, {"last_name": "Mitsch Bush", "updated_at": "2014-10-15 12:36:03", "full_name":
+        "Diane Mitsch Bush", "id": "COL000122", "first_name": "Diane", "middle_name":
+        "", "district": "26", "chamber": "lower", "state": "co", "party": "Democratic",
+        "email": "diane.mitschbush.house@state.co.us", "all_ids": ["COL000122"], "leg_id":
+        "COL000122", "active": true, "transparencydata_id": "3eb8ec293a2e4432b953d0235fec8dee",
+        "nickname": "", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/00786EEE73B7910C8725794300729C01/$FILE/H-MitschBush.jpg",
+        "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=26&chamber=house",
+        "created_at": "2013-01-07 15:39:03", "+occupation": "Retired College Professor",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-2923",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "suffixes": ""}, {"last_name": "Landgraf", "updated_at": "2014-10-15
+        12:36:02", "full_name": "Lois Landgraf", "id": "COL000124", "first_name":
+        "Lois", "middle_name": "", "district": "21", "chamber": "lower", "state":
+        "co", "party": "Republican", "email": "lois.landgraf.house@state.co.us", "all_ids":
+        ["COL000124"], "leg_id": "COL000124", "active": true, "transparencydata_id":
+        "06cd393eaa89423ba6fda6ca523a1530", "nickname": "", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/5646DB100037D16F87257AB0005157DA/$FILE/H-Landgraf.jpg",
+        "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=21&chamber=house",
+        "created_at": "2013-01-07 15:39:03", "+occupation": "", "offices": [{"fax":
+        null, "name": "Capitol Office", "phone": "303-866-2946", "address": "200 E.
+        Colfax\nDenver, CO 80203", "type": "capitol", "email": null}], "suffixes":
+        ""}, {"last_name": "Everett", "updated_at": "2014-10-15 12:36:02", "full_name":
+        "Justin Everett", "id": "COL000125", "first_name": "Justin", "middle_name":
+        "", "district": "22", "+occupation": "Mediator/Arbitrator", "state": "co",
+        "party": "Republican", "email": "justin.everett.house@state.co.us", "all_ids":
+        ["COL000125"], "leg_id": "COL000125", "active": true, "transparencydata_id":
+        "d8f6ef118bc942fea9676202f993351d", "nickname": "", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/2D4430CEF0D2D3AC8725794300729BF3/$FILE/H-Everett.jpg",
+        "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=22&chamber=house",
+        "created_at": "2013-01-07 15:39:03", "chamber": "lower", "offices": [{"fax":
+        null, "name": "Capitol Office", "phone": "303-866-2927", "address": "200 E.
+        Colfax\nDenver, CO 80203", "type": "capitol", "email": null}], "suffixes":
+        ""}, {"last_name": "Garcia", "updated_at": "2014-10-15 12:36:03", "full_name":
+        "Leroy M. Garcia", "id": "COL000126", "first_name": "Leroy", "middle_name":
+        "M.", "district": "46", "+occupation": "Educator", "state": "co", "party":
+        "Democratic", "email": "leroy.garcia.house@state.co.us", "all_ids": ["COL000126"],
+        "leg_id": "COL000126", "active": true, "transparencydata_id": "55d2a326810e4192b1e8e57c870dd28e",
+        "nickname": "", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/457BA4EEB994416A8725794300729C42/$FILE/H-Garcia.jpg",
+        "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=46&chamber=house",
+        "created_at": "2013-01-07 15:39:03", "chamber": "lower", "offices": [{"fax":
+        null, "name": "Capitol Office", "phone": "303-866-2968", "address": "200 E.
+        Colfax\nDenver, CO 80203", "type": "capitol", "email": null}], "suffixes":
+        ""}, {"last_name": "Navarro", "updated_at": "2014-10-15 12:36:02", "full_name":
+        "Clarice Navarro", "id": "COL000127", "first_name": "Clarice", "middle_name":
+        "", "district": "47", "+occupation": "Small Business Owner", "state": "co",
+        "party": "Republican", "email": "clarice.navarro.house@state.co.us", "all_ids":
+        ["COL000127", "COL000152"], "leg_id": "COL000127", "active": true, "transparencydata_id":
+        "9bc6d855c79e44cea1a4363eeff859dc", "nickname": "", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/C62E480C993D55518725794300729C15/$FILE/H-Navarro-Ratzlaff.jpg",
+        "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=47&chamber=house",
+        "created_at": "2013-01-07 15:39:03", "chamber": "lower", "offices": [{"fax":
+        null, "name": "Capitol Office", "phone": "303-866-2905", "address": "200 E.
+        Colfax\nDenver, CO 80203", "type": "capitol", "email": null}], "suffixes":
+        ""}, {"last_name": "Buckner", "updated_at": "2014-10-15 12:36:03", "full_name":
+        "John W. Buckner", "id": "COL000128", "first_name": "John", "middle_name":
+        "W.", "district": "40", "+occupation": "Retired Educator", "state": "co",
+        "party": "Democratic", "email": "john.buckner.house@state.co.us", "all_ids":
+        ["COL000128"], "leg_id": "COL000128", "active": true, "transparencydata_id":
+        "1a850623da114b47bd08eec538e83583", "nickname": "", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/7E11C2C8E9060F7387257AB1005A9DD5/$FILE/H-Buckner.jpg",
+        "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=40&chamber=house",
+        "created_at": "2013-01-07 15:39:04", "chamber": "lower", "offices": [{"fax":
+        null, "name": "Capitol Office", "phone": "303-866-2944", "address": "200 E.
+        Colfax\nDenver, CO 80203", "type": "capitol", "email": null}], "suffixes":
+        ""}, {"last_name": "Melton", "updated_at": "2014-10-15 12:36:03", "full_name":
+        "Jovan Melton", "id": "COL000129", "first_name": "Jovan", "middle_name": "",
+        "district": "41", "chamber": "lower", "state": "co", "party": "Democratic",
+        "email": "jovan.melton.house@state.co.us", "all_ids": ["COL000129"], "leg_id":
+        "COL000129", "active": true, "transparencydata_id": "e1a56f89357c44559d8e6351f0437391",
+        "nickname": "", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/BA3106776062B1818725794300729C25/$FILE/H-Melton.jpg",
+        "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=41&chamber=house",
+        "created_at": "2013-01-07 15:39:04", "+occupation": "Consultant", "offices":
+        [{"fax": null, "name": "Capitol Office", "phone": "303-866-2919", "address":
+        "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email": null}], "suffixes":
+        ""}, {"last_name": "Rosenthal", "updated_at": "2014-10-15 12:36:02", "full_name":
+        "Paul Rosenthal", "id": "COL000130", "first_name": "Paul", "middle_name":
+        "", "district": "9", "+occupation": "Teacher", "state": "co", "party": "Democratic",
+        "csrfmiddlewaretoken": "6W0EVxLP4KAC1iZ0gGYjHaREUO0HtFaK", "email": "paul.rosenthal.house@state.co.us",
+        "all_ids": ["COL000130"], "leg_id": "COL000130", "active": true, "transparencydata_id":
+        "edb3e26b79b14b0587b35664eae08fcd", "nickname": "", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/C79A2D8837BCD8A58725794300729C16/$FILE/H-Rosenthal.jpg",
+        "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=9&chamber=house",
+        "created_at": "2013-01-07 15:39:04", "chamber": "lower", "offices": [{"fax":
+        null, "name": "Capitol Office", "phone": "303-866-2910", "address": "200 E.
+        Colfax\nDenver, CO 80203", "type": "capitol", "email": null}], "suffixes":
+        ""}, {"last_name": "Buck", "updated_at": "2014-10-15 12:36:03", "full_name":
+        "Perry Buck", "id": "COL000131", "first_name": "Perry", "middle_name": "",
+        "district": "49", "chamber": "lower", "state": "co", "party": "Republican",
+        "email": "perrybuck49@gmail.com", "all_ids": ["COL000131"], "leg_id": "COL000131",
+        "active": true, "transparencydata_id": "e867ec30c49f4f24bfa8f53255cbb315",
+        "nickname": "", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/A59B61317EFEE4128725794300729BF0/$FILE/H-Buck.jpg",
+        "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=49&chamber=house",
+        "created_at": "2013-01-07 15:39:04", "+occupation": "Event Planning", "offices":
+        [{"fax": null, "name": "Capitol Office", "phone": "303-866-2907", "address":
+        "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email": null}], "suffixes":
+        ""}, {"last_name": "Lawrence", "updated_at": "2014-10-15 12:36:03", "full_name":
+        "Polly Lawrence", "id": "COL000132", "first_name": "Polly", "middle_name":
+        "", "district": "39", "chamber": "lower", "state": "co", "party": "Republican",
+        "email": "polly.lawrence.house@state.co.us", "all_ids": ["COL000132"], "leg_id":
+        "COL000132", "active": true, "transparencydata_id": "c49427c798604a0e9ddb96341e7081b2",
+        "nickname": "", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/20F2285BC2A6902C8725794300729C1D/$FILE/H-Lawrence.jpg",
+        "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=39&chamber=house",
+        "created_at": "2013-01-07 15:39:04", "+occupation": "Construction Contracts
+        Mgr", "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-2935",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "suffixes": ""}, {"last_name": "Lebsock", "updated_at": "2014-10-15
+        12:36:03", "full_name": "Steve Lebsock", "id": "COL000133", "first_name":
+        "Steve", "middle_name": "", "district": "34", "chamber": "lower", "state":
+        "co", "party": "Democratic", "email": "steve.lebsock.house@state.co.us", "all_ids":
+        ["COL000133"], "leg_id": "COL000133", "active": true, "transparencydata_id":
+        "d847bdf05e194f9c9b75f4a10ddbc698", "nickname": "", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/9B20C373EF5B84338725794300729BF2/$FILE/H-Lebsock.jpg",
+        "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=34&chamber=house",
+        "created_at": "2013-01-07 15:39:04", "+occupation": "Legislator", "offices":
+        [{"fax": null, "name": "Capitol Office", "phone": "303-866-2931", "address":
+        "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email": null}], "suffixes":
+        ""}, {"last_name": "McLachlan", "updated_at": "2014-10-15 12:36:03", "full_name":
+        "Mike McLachlan", "id": "COL000134", "first_name": "Mike", "middle_name":
+        "", "district": "59", "+occupation": "Lawyer", "state": "co", "party": "Democratic",
+        "csrfmiddlewaretoken": "6W0EVxLP4KAC1iZ0gGYjHaREUO0HtFaK", "email": "mike.mclachlan.house@state.co.us",
+        "all_ids": ["COL000134"], "leg_id": "COL000134", "active": true, "transparencydata_id":
+        "159650b2911d4c20b35f1e5a1a846d1c", "nickname": "", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/C827E02ACCB5DE588725794300729C2A/$FILE/H-McLachlan.jpg",
+        "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=59&chamber=house",
+        "created_at": "2013-01-07 15:39:04", "chamber": "lower", "offices": [{"fax":
+        null, "name": "Capitol Office", "phone": "303-866-2914", "address": "200 E.
+        Colfax\nDenver, CO 80203", "type": "capitol", "email": null}], "suffixes":
+        ""}, {"last_name": "Singer", "updated_at": "2014-10-15 12:36:03", "full_name":
+        "Jonathan Singer", "id": "COL000135", "first_name": "Jonathan", "middle_name":
+        "", "district": "11", "+occupation": "Social Worker", "state": "co", "party":
+        "Democratic", "email": "jonathan.singer.house@state.co.us", "all_ids": ["COL000135"],
+        "leg_id": "COL000135", "active": true, "transparencydata_id": "e1de8421dfb34909a219174f22e12f19",
+        "nickname": "", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/6658E8DF971F2BCD872579920050A6AD/$FILE/H-Singer.jpg",
+        "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=11&chamber=house",
+        "created_at": "2013-01-07 15:39:04", "chamber": "lower", "offices": [{"fax":
+        null, "name": "Capitol Office", "phone": "303-866-2780", "address": "200 E.
+        Colfax\nDenver, CO 80203", "type": "capitol", "email": null}], "suffixes":
+        ""}, {"last_name": "Foote", "updated_at": "2014-10-15 12:36:03", "full_name":
+        "Mike Foote", "id": "COL000136", "first_name": "Mike", "middle_name": "",
+        "district": "12", "chamber": "lower", "state": "co", "party": "Democratic",
+        "email": "mike.foote.house@state.co.us", "all_ids": ["COL000136"], "leg_id":
+        "COL000136", "active": true, "transparencydata_id": "9221e681668b4e35aa24944a8208a315",
+        "nickname": "", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/3075B4546CC6EAEA8725794300729C30/$FILE/H-Foote.jpg",
+        "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=12&chamber=house",
+        "created_at": "2013-01-07 15:39:04", "+occupation": "Attorney", "offices":
+        [{"fax": null, "name": "Capitol Office", "phone": "303-866-2920", "address":
+        "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email": null}], "suffixes":
+        ""}, {"last_name": "Nordberg", "updated_at": "2014-10-15 12:36:03", "full_name":
+        "Dan Nordberg", "id": "COL000137", "first_name": "Dan", "middle_name": "",
+        "district": "14", "chamber": "lower", "state": "co", "party": "Republican",
+        "csrfmiddlewaretoken": "6W0EVxLP4KAC1iZ0gGYjHaREUO0HtFaK", "email": "dan.nordberg.house@state.co.us",
+        "all_ids": ["COL000137"], "leg_id": "COL000137", "active": true, "transparencydata_id":
+        "0beb2332520c4662b1b41dd04c7b2a9e", "nickname": "", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/C61229165929C25B87257AB000554E76/$FILE/H-Nordberg.jpg",
+        "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=14&chamber=house",
+        "created_at": "2013-01-07 15:39:04", "+occupation": "", "offices": [{"fax":
+        null, "name": "Capitol Office", "phone": "303-866-2965", "address": "200 E.
+        Colfax\nDenver, CO 80203", "type": "capitol", "email": null}], "suffixes":
+        ""}, {"last_name": "Exum", "updated_at": "2014-10-15 12:36:02", "full_name":
+        "Thomas \"Tony\" Exum", "id": "COL000138", "first_name": "Thomas \"Tony\"",
+        "middle_name": "", "district": "17", "chamber": "lower", "state": "co", "party":
+        "Democratic", "email": "thomas.exum.house@state.co.us", "all_ids": ["COL000138",
+        "COL000157"], "leg_id": "COL000138", "active": true, "transparencydata_id":
+        "1358f89ca80b4caba5af8fafae2b752b", "nickname": "", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/0985630D6981B6E48725794300729C28/$FILE/H-Exum-Official.jpg",
+        "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=17&chamber=house",
+        "created_at": "2013-01-07 15:39:04", "+occupation": "Retired Firefighter",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-3069",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "suffixes": ""}, {"last_name": "Salazar", "updated_at": "2014-10-15
+        12:36:03", "full_name": "Joseph A. Salazar", "id": "COL000141", "first_name":
+        "Joseph", "middle_name": "A.", "district": "31", "chamber": "lower", "state":
+        "co", "party": "Democratic", "email": "joseph.salazar.house@state.co.us",
+        "all_ids": ["COL000141"], "leg_id": "COL000141", "active": true, "transparencydata_id":
+        "47c33df5b7854bf399668e036043b2e8", "nickname": "", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/79A160D5C487D7998725794300729BFC/$FILE/H-Salazar.jpg",
+        "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=31&chamber=house",
+        "created_at": "2013-01-07 15:39:04", "+occupation": "Civil Rights Attorney
+        / Professor", "offices": [{"fax": null, "name": "Capitol Office", "phone":
+        "303-866-2918", "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol",
+        "email": null}], "suffixes": ""}, {"last_name": "Ginal", "updated_at": "2014-10-15
+        12:36:03", "full_name": "Joann Ginal", "id": "COL000143", "first_name": "Joann",
+        "middle_name": "", "district": "52", "+occupation": "Bio-scientist", "state":
+        "co", "party": "Democratic", "email": "joann.ginal.house@state.co.us", "all_ids":
+        ["COL000143"], "leg_id": "COL000143", "active": true, "transparencydata_id":
+        "45c0bbfc35b64fc18bde512215839f07", "nickname": "", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/56CBBF1399A92D678725794300729C24/$FILE/H-Ginal.jpg",
+        "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=52&chamber=house",
+        "created_at": "2013-01-07 15:39:04", "chamber": "lower", "offices": [{"fax":
+        null, "name": "Capitol Office", "phone": "303-866-4569", "address": "200 E.
+        Colfax\nDenver, CO 80203", "type": "capitol", "email": null}], "suffixes":
+        ""}, {"last_name": "Primavera", "updated_at": "2014-10-15 12:36:02", "full_name":
+        "Dianne Primavera", "id": "COL000144", "first_name": "Dianne", "middle_name":
+        "", "district": "33", "chamber": "lower", "state": "co", "party": "Democratic",
+        "email": "dianne.primavera.house@state.co.us", "all_ids": ["COL000144"], "leg_id":
+        "COL000144", "active": true, "transparencydata_id": "a4a23c83261a4f05b45860d76c14601f",
+        "nickname": "", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/15856697808CD8748725794300729C2E/$FILE/H-Primavera.jpg",
+        "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=33&chamber=house",
+        "created_at": "2013-01-07 15:39:04", "+occupation": "Retired", "offices":
+        [{"fax": null, "name": "Capitol Office", "phone": "303-866-4667", "address":
+        "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email": null}], "suffixes":
+        ""}, {"last_name": "Humphrey", "updated_at": "2014-10-15 12:36:03", "full_name":
+        "Stephen Humphrey", "id": "COL000146", "first_name": "Stephen", "middle_name":
+        "", "district": "48", "chamber": "lower", "state": "co", "party": "Republican",
+        "email": "rephumphrey48@yahoo.com", "all_ids": ["COL000146"], "leg_id": "COL000146",
+        "active": true, "transparencydata_id": "92c2e17872b745c09d7c89a05b1bc139",
+        "nickname": "", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/173580C54519FB168725794300729C14/$FILE/H-Humphrey.jpg",
+        "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=48&chamber=house",
+        "created_at": "2013-01-07 15:39:04", "+occupation": "Counselor", "offices":
+        [{"fax": null, "name": "Capitol Office", "phone": "303-866-2943", "address":
+        "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email": null}], "suffixes":
+        ""}, {"last_name": "Becker", "updated_at": "2014-10-15 12:36:03", "full_name":
+        "KC Becker", "id": "COL000161", "first_name": "KC", "middle_name": "", "district":
+        "13", "+occupation": "Attorney", "state": "co", "party": "Democratic", "email":
+        "kcbecker.house@state.co.us", "all_ids": ["COL000161"], "leg_id": "COL000161",
+        "active": true, "transparencydata_id": "", "nickname": "", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/380209C7D1421B9A87257C1A005CCBE2/$FILE/H-Becker.jpg",
+        "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=13&chamber=house",
+        "created_at": "2013-11-16 01:17:05", "chamber": "lower", "offices": [{"fax":
+        null, "name": "Capitol Office", "phone": "303-866-2578", "address": "200 E.
+        Colfax\nDenver, CO 80203", "type": "capitol", "email": null}], "suffixes":
+        ""}, {"last_name": "Rankin", "updated_at": "2014-10-15 12:36:03", "full_name":
+        "Bob Rankin", "id": "COL000147", "first_name": "Bob", "middle_name": "", "district":
+        "57", "+occupation": "", "state": "co", "party": "Republican", "csrfmiddlewaretoken":
+        "6W0EVxLP4KAC1iZ0gGYjHaREUO0HtFaK", "email": "bob.rankin.house@state.co.us",
+        "all_ids": ["COL000147"], "leg_id": "COL000147", "active": true, "transparencydata_id":
+        "9be50c667e9748d6b55b5e4511d18e89", "nickname": "", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/BCFDEC153E785F0D8725794300729BF1/$FILE/H-Rankin.jpg",
+        "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=57&chamber=house",
+        "created_at": "2013-01-07 15:39:04", "chamber": "lower", "offices": [{"fax":
+        null, "name": "Capitol Office", "phone": "303-866-2949", "address": "200 E.
+        Colfax\nDenver, CO 80203", "type": "capitol", "email": null}], "suffixes":
+        ""}, {"last_name": "Sonnenberg", "updated_at": "2014-10-15 12:36:03", "full_name":
+        "Jerry Sonnenberg", "id": "COL000045", "first_name": "Jerry", "middle_name":
+        "", "district": "65", "+occupation": "Farmer/Rancher", "state": "co", "votesmart_id":
+        "66361", "party": "Republican", "email": "jerry@repsonnenberg.com", "all_ids":
+        ["COL000045"], "leg_id": "COL000045", "active": true, "transparencydata_id":
+        "134ae519665a419a8fd5a52663165c2a", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/3651FF9D67FF775A8725794300729C07/$FILE/H-Sonnenberg.jpg",
+        "+phone": "303 866 3706", "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=65&chamber=house",
+        "country": "us", "created_at": "2012-01-19 01:01:49", "chamber": "lower",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-3706",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "suffixes": ""}, {"last_name": "Tochtrop", "updated_at": "2014-10-15
+        12:36:02", "full_name": "Lois Tochtrop", "id": "COL000001", "first_name":
+        "Lois", "middle_name": "", "district": "24", "chamber": "upper", "state":
+        "co", "votesmart_id": "12714", "party": "Democratic", "suffixes": "", "email":
+        "lotochtrop@aol.com", "all_ids": ["COL000001"], "leg_id": "COL000001", "active":
+        true, "transparencydata_id": "c2baf94fedbe423c82b464faac451074", "photo_url":
+        "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/31CA2CAE90D72BD28725794300729C26/$FILE/S-Tochtrop.jpg",
+        "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=24&chamber=senate",
+        "country": "us", "created_at": "2012-01-19 01:01:48", "+occupation": "Registered
+        Nurse", "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-4863",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "+phone": "303 866 4863"}, {"last_name": "Hodge", "updated_at": "2014-10-15
+        12:36:02", "full_name": "Mary Hodge", "id": "COL000002", "first_name": "Mary",
+        "middle_name": "", "district": "25", "chamber": "upper", "state": "co", "votesmart_id":
+        "30029", "party": "Democratic", "suffixes": "", "email": "mary.hodge.senate@state.co.us",
+        "all_ids": ["COL000002"], "leg_id": "COL000002", "active": true, "transparencydata_id":
+        "c5b21f76f1a244dfa385127b7b6f58f4", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/5A77FA9AC392C22A8725794300729C20/$FILE/S-Hodge.jpg",
+        "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=25&chamber=senate",
+        "country": "us", "created_at": "2012-01-19 01:01:48", "+occupation": "Property
+        Management", "offices": [{"fax": null, "name": "Capitol Office", "phone":
+        "303-866-4855", "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol",
+        "email": null}], "+phone": "303 866 4855"}, {"last_name": "Newell", "updated_at":
+        "2014-10-15 12:36:03", "full_name": "Linda Newell", "id": "COL000003", "first_name":
+        "Linda", "middle_name": "", "district": "26", "+occupation": "Business Consultant",
+        "state": "co", "votesmart_id": "107241", "party": "Democratic", "email": "linda.newell.senate@gmail.com",
+        "all_ids": ["COL000003"], "leg_id": "COL000003", "active": true, "transparencydata_id":
+        "4b1b9fea8a8e4ea8bfb834eaf0111851", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/001F231554CEB1AB8725794300729C05/$FILE/S-Newell.jpg",
+        "+phone": "303 866 4846", "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=26&chamber=senate",
+        "country": "us", "created_at": "2012-01-19 01:01:48", "chamber": "upper",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-4846",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "suffixes": ""}, {"last_name": "Jahn", "updated_at": "2014-10-15 12:36:02",
+        "full_name": "Cheri Jahn", "id": "COL000005", "first_name": "Cheri", "middle_name":
+        "", "district": "20", "chamber": "upper", "state": "co", "votesmart_id": "29806",
+        "party": "Democratic", "suffixes": "", "email": "cheri.jahn.senate@state.co.us",
+        "all_ids": ["COL000005"], "leg_id": "COL000005", "active": true, "transparencydata_id":
+        "0a598c3b898e4fa8aaceae24510e3323", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/96B5E6C5006A369B8725794300729C4E/$FILE/S-Jahn.jpg",
+        "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=20&chamber=senate",
+        "country": "us", "created_at": "2012-01-19 01:01:48", "+occupation": "Senator",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-4856",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "+phone": "303 866 4856"}, {"last_name": "Carroll", "updated_at":
+        "2014-10-15 12:35:40", "full_name": "Morgan Carroll", "id": "COL000010", "first_name":
+        "Morgan", "middle_name": "", "district": "29", "+occupation": "Attorney, Author",
+        "state": "co", "votesmart_id": "30084", "party": "Democratic", "email": "morgan.carroll.senate@state.co.us",
+        "all_ids": ["COL000010"], "leg_id": "COL000010", "active": true, "transparencydata_id":
+        "c0cfedcafdec45c9b1d034dec09b984f", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/E5A7F3CD214905678725794300729BF7/$FILE/S-Carroll.jpg",
+        "+phone": "303 866 4879", "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=29&chamber=senate",
+        "country": "us", "created_at": "2012-01-19 01:01:48", "chamber": "upper",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-4879",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "suffixes": ""}, {"last_name": "Brophy", "updated_at": "2014-10-15
+        12:36:02", "full_name": "Greg Brophy", "id": "COL000011", "first_name": "Greg",
+        "middle_name": "", "district": "1", "chamber": "upper", "state": "co", "votesmart_id":
+        "30047", "party": "Republican", "email": "greg@gregbrophy.net", "all_ids":
+        ["COL000011"], "leg_id": "COL000011", "active": true, "transparencydata_id":
+        "1c3c161d53a34e62918bfa5e6a480188", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/3382096A5CAF6D118725794300729C32/$FILE/S-Brophy.jpg",
+        "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=1&chamber=senate",
+        "country": "us", "created_at": "2012-01-19 01:01:48", "+occupation": "Farmer",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-6360",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "suffixes": ""}, {"last_name": "Grantham", "updated_at": "2014-10-15
+        12:36:03", "full_name": "Kevin Grantham", "id": "COL000013", "first_name":
+        "Kevin", "middle_name": "", "district": "2", "chamber": "upper", "state":
+        "co", "votesmart_id": "125352", "party": "Republican", "suffixes": "", "email":
+        "kevin.grantham.senate@state.co.us", "all_ids": ["COL000013"], "leg_id": "COL000013",
+        "active": true, "transparencydata_id": "24f7752122ba4e75a3dc3857ff6b38c1",
+        "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/992E93184F8584438725794300729C4C/$FILE/S-Grantham.jpg",
+        "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=2&chamber=senate",
+        "country": "us", "created_at": "2012-01-19 01:01:48", "+occupation": "Certified
+        General Appraiser", "offices": [{"fax": null, "name": "Capitol Office", "phone":
+        "303-866-4877", "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol",
+        "email": null}], "+phone": "303 866 4877"}, {"last_name": "Schwartz", "updated_at":
+        "2014-10-15 12:36:03", "full_name": "Gail Schwartz", "id": "COL000014", "first_name":
+        "Gail", "middle_name": "", "district": "5", "chamber": "upper", "state": "co",
+        "votesmart_id": "65721", "party": "Democratic", "email": "gail.schwartz.senate@gmail.com",
+        "all_ids": ["COL000014"], "leg_id": "COL000014", "active": true, "transparencydata_id":
+        "3502a8cb7fea4092a8c468bc307caa37", "nickname": "", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/3A3BEBA374ABA5388725794300729C4F/$FILE/S-Schwartz.jpg",
+        "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=5&chamber=senate",
+        "country": "us", "created_at": "2012-01-19 01:01:48", "+occupation": "Market
+        Analyst", "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-4871",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "suffixes": ""}, {"last_name": "Scheffel", "updated_at": "2014-10-15
+        12:36:03", "full_name": "Mark Scheffel", "id": "COL000015", "first_name":
+        "Mark", "middle_name": "", "district": "4", "chamber": "upper", "state": "co",
+        "votesmart_id": "106249", "party": "Republican", "suffixes": "", "email":
+        "mark.scheffel.senate@state.co.us", "all_ids": ["COL000015"], "leg_id": "COL000015",
+        "active": true, "transparencydata_id": "4dd319b836e74dba81343c4006e685e4",
+        "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/4D4AE24E29C2198B8725794300729C1E/$FILE/S-Scheffel.jpg",
+        "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=4&chamber=senate",
+        "country": "us", "created_at": "2012-01-19 01:01:48", "+occupation": "Attorney",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-4869",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "+phone": "303 866 4869"}, {"last_name": "King", "updated_at": "2014-10-15
+        12:36:02", "full_name": "Steve King", "id": "COL000016", "first_name": "Steve",
+        "middle_name": "", "district": "7", "chamber": "upper", "state": "co", "votesmart_id":
+        "66357", "party": "Republican", "suffixes": "", "email": "steve.king.senate@state.co.us",
+        "all_ids": ["COL000016", "COL000151", "COL000156"], "leg_id": "COL000016",
+        "active": true, "transparencydata_id": "04edecb79c7e4e9592480c02480e9295",
+        "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/25CE4378556355E98725794300729C4B/$FILE/S-King.jpg",
+        "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=7&chamber=senate",
+        "country": "us", "created_at": "2012-01-19 01:01:48", "level": "state", "+occupation":
+        "Violent Crime Investigator", "offices": [{"fax": null, "name": "Capitol Office",
+        "phone": "303-866-3077", "address": "200 E. Colfax\nDenver, CO 80203", "type":
+        "capitol", "email": null}], "+phone": "303 866 3077"}, {"last_name": "Roberts",
+        "updated_at": "2014-10-15 12:36:02", "full_name": "Ellen S. Roberts", "id":
+        "COL000017", "first_name": "Ellen S.", "middle_name": "", "district": "6",
+        "chamber": "upper", "state": "co", "votesmart_id": "66358", "party": "Republican",
+        "suffixes": "", "email": "ellen.roberts.senate@state.co.us", "all_ids": ["COL000017"],
+        "leg_id": "COL000017", "active": true, "transparencydata_id": "606c2a5063c4485aade86bfc129b83b5",
+        "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/75E2449AA27262678725794300729C4D/$FILE/S-Roberts.jpg",
+        "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=6&chamber=senate",
+        "country": "us", "created_at": "2012-01-19 01:01:48", "+occupation": "Legislator",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-4884",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "+phone": "303 866 4884"}, {"last_name": "Lambert", "updated_at":
+        "2014-10-15 12:36:03", "full_name": "Kent D. Lambert", "id": "COL000018",
+        "first_name": "Kent D.", "middle_name": "", "district": "9", "+occupation":
+        "Colonel, USAF (Retired)", "state": "co", "votesmart_id": "29791", "party":
+        "Republican", "suffixes": "", "email": "senatorlambert@comcast.net", "all_ids":
+        ["COL000018"], "leg_id": "COL000018", "active": true, "transparencydata_id":
+        "5856d368827c406fa94cf5d4e958c634", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/8246CD77B77E85658725794300729C4A/$FILE/S-Lambert.jpg",
+        "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=9&chamber=senate",
+        "country": "us", "created_at": "2012-01-19 01:01:48", "chamber": "upper",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-4835",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "+phone": "303 866 4835"}, {"last_name": "Cadman", "updated_at": "2014-10-15
+        12:35:40", "full_name": "Bill Cadman", "id": "COL000021", "first_name": "Bill",
+        "middle_name": "", "district": "12", "+occupation": "Business Owner / Marketing",
+        "state": "co", "votesmart_id": "29992", "party": "Republican", "email": "bill.cadman.senate@state.co.us",
+        "all_ids": ["COL000021", "COL000108"], "leg_id": "COL000021", "active": true,
+        "transparencydata_id": "2086f8413600423ba6e2b779d21b39f5", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/D2A85CF2135D932B8725794300729C21/$FILE/S-Cadman.jpg",
+        "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=12&chamber=senate",
+        "country": "us", "created_at": "2012-01-19 01:01:48", "chamber": "upper",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-4880",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "suffixes": ""}, {"last_name": "Renfroe", "updated_at": "2014-10-15
+        12:36:03", "full_name": "Scott W. Renfroe", "id": "COL000022", "first_name":
+        "Scott W.", "middle_name": "", "district": "13", "chamber": "upper", "state":
+        "co", "votesmart_id": "66429", "party": "Republican", "email": "senatorrenfroe@gmail.com",
+        "all_ids": ["COL000022"], "leg_id": "COL000022", "active": true, "transparencydata_id":
+        "99711d9724384198b317909f3b426485", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/A114CBB3984664A08725794300729C06/$FILE/S-Renfroe.jpg",
+        "+phone": "303 866 4451", "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=13&chamber=senate",
+        "country": "us", "created_at": "2012-01-19 01:01:48", "+occupation": "Concrete
+        Contractor", "offices": [{"fax": null, "name": "Capitol Office", "phone":
+        "303-866-4451", "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol",
+        "email": null}], "suffixes": ""}, {"last_name": "Lundberg", "updated_at":
+        "2014-10-15 12:36:03", "full_name": "Kevin Lundberg", "id": "COL000024", "first_name":
+        "Kevin", "middle_name": "", "district": "15", "+occupation": "Media Production",
+        "state": "co", "votesmart_id": "16898", "party": "Republican", "email": "kevin@kevinlundberg.com",
+        "all_ids": ["COL000024"], "leg_id": "COL000024", "active": true, "transparencydata_id":
+        "7ca01168f1fa43f796b14cd8d83bbcdb", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/34F27288BE26CC528725794300729C39/$FILE/S-Lundberg.jpg",
+        "+phone": "303 866 4853", "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=15&chamber=senate",
+        "country": "us", "created_at": "2012-01-19 01:01:48", "chamber": "upper",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-4853",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "suffixes": ""}, {"last_name": "Nicholson", "updated_at": "2014-10-15
+        12:36:03", "full_name": "Jeanne Nicholson", "id": "COL000027", "first_name":
+        "Jeanne", "middle_name": "", "district": "16", "chamber": "upper", "state":
+        "co", "votesmart_id": "30120", "party": "Democratic", "suffixes": "", "email":
+        "jeanne.nicholson.senate@state.co.us", "all_ids": ["COL000027"], "leg_id":
+        "COL000027", "active": true, "transparencydata_id": "c22e89d3164b4c999cc11fb1fb39bc72",
+        "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/4ECAF0D74D38A1A48725794300729C49/$FILE/S-Nicholson.jpg",
+        "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=16&chamber=senate",
+        "country": "us", "created_at": "2012-01-19 01:01:48", "+occupation": "Public
+        Health Nurse", "offices": [{"fax": null, "name": "Capitol Office", "phone":
+        "303-866-4873", "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol",
+        "email": null}], "+phone": "303 866 4873"}, {"last_name": "Heath", "updated_at":
+        "2014-10-15 12:35:40", "full_name": "Rollie Heath", "id": "COL000029", "first_name":
+        "Rollie", "middle_name": "", "district": "18", "+occupation": "State Senator",
+        "state": "co", "votesmart_id": "30162", "party": "Democratic", "email": "rollie.heath.senate@state.co.us",
+        "all_ids": ["COL000029"], "leg_id": "COL000029", "active": true, "transparencydata_id":
+        "92b1ecb9f3c9444b856bb16723622419", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/19F7AB20AFAB7E068725794300729C08/$FILE/S-Heath.jpg",
+        "+phone": "303 866 4872", "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=18&chamber=senate",
+        "country": "us", "created_at": "2012-01-19 01:01:48", "chamber": "upper",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-4872",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "suffixes": ""}, {"last_name": "Steadman", "updated_at": "2014-10-15
+        12:36:03", "full_name": "Pat Steadman", "id": "COL000030", "first_name": "Pat",
+        "middle_name": "", "district": "31", "+occupation": "Legislator", "state":
+        "co", "votesmart_id": "125379", "party": "Democratic", "email": "pat.steadman.senate@state.co.us",
+        "all_ids": ["COL000030"], "leg_id": "COL000030", "active": true, "transparencydata_id":
+        "827c345ba9b14dfb857e187302e40fef", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/5EE2C71F76FB5AD78725794300729C44/$FILE/S-Steadman.jpg",
+        "+phone": "303 866 4861", "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=31&chamber=senate",
+        "country": "us", "created_at": "2012-01-19 01:01:48", "chamber": "upper",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-4861",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "suffixes": ""}, {"last_name": "Harvey", "updated_at": "2014-10-15
+        12:36:03", "full_name": "Ted Harvey", "id": "COL000031", "first_name": "Ted",
+        "middle_name": "", "district": "30", "+occupation": "Mortgage Banking", "state":
+        "co", "votesmart_id": "17021", "party": "Republican", "email": "ted.harvey.senate@state.co.us",
+        "all_ids": ["COL000031"], "leg_id": "COL000031", "active": true, "transparencydata_id":
+        "cbdac746b89f4bf6b616c4e4ff8ef925", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/832B4E1F5D36C5D98725794300729BFB/$FILE/S-Harvey.jpg",
+        "+phone": "303 866 4881", "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=30&chamber=senate",
+        "country": "us", "created_at": "2012-01-19 01:01:48", "chamber": "upper",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-4881",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "suffixes": ""}, {"last_name": "Guzman", "updated_at": "2014-10-15
+        12:36:02", "full_name": "Lucia Guzman", "id": "COL000033", "first_name": "Lucia",
+        "middle_name": "", "district": "34", "chamber": "upper", "state": "co", "votesmart_id":
+        "121691", "party": "Democratic", "suffixes": "", "email": "lucia.guzman.senate@state.co.us",
+        "all_ids": ["COL000033"], "leg_id": "COL000033", "active": true, "transparencydata_id":
+        "a41c633ca76d42ba97e89f5827b48c13", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/D6F3B1A03ABD77CD8725794300729BF9/$FILE/S-Guzman.jpg",
+        "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=34&chamber=senate",
+        "country": "us", "created_at": "2012-01-19 01:01:48", "+occupation": "Legislator",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-4862",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "+phone": "303 866 4862"}, {"last_name": "Johnston", "updated_at":
+        "2014-10-15 12:36:03", "full_name": "Michael Johnston", "id": "COL000034",
+        "first_name": "Michael", "middle_name": "", "district": "33", "+occupation":
+        "Education Nonprofit Consultant", "state": "co", "votesmart_id": "111204",
+        "party": "Democratic", "email": "mike.johnston.senate@state.co.us", "all_ids":
+        ["COL000034"], "leg_id": "COL000034", "active": true, "transparencydata_id":
+        "b5720f6732384e1a9c3c8eba3d770605", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/786344316936765C8725794300729C2B/$FILE/S-Johnston.jpg",
+        "+phone": "303 866 4864", "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=33&chamber=senate",
+        "country": "us", "created_at": "2012-01-19 01:01:48", "chamber": "upper",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-4864",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "suffixes": ""}, {"last_name": "Aguilar", "updated_at": "2014-10-15
+        12:36:03", "full_name": "Irene Aguilar", "id": "COL000035", "first_name":
+        "Irene", "middle_name": "", "district": "32", "chamber": "upper", "state":
+        "co", "votesmart_id": "128648", "party": "Democratic", "suffixes": "", "email":
+        "irene.aguilar.senate@state.co.us", "all_ids": ["COL000035"], "leg_id": "COL000035",
+        "active": true, "transparencydata_id": "d2aaca03c04745cf835c0ad36cf2d279",
+        "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/7D84C28F668B10BE8725794300729C0E/$FILE/S-Agular.jpg",
+        "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=32&chamber=senate",
+        "country": "us", "created_at": "2012-01-19 01:01:48", "+occupation": "Physician",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-4852",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "+phone": "303 866 4852"}, {"last_name": "Todd", "updated_at": "2014-10-15
+        12:36:03", "full_name": "Nancy Todd", "id": "COL000062", "first_name": "Nancy",
+        "middle_name": "", "district": "28", "chamber": "upper", "state": "co", "votesmart_id":
+        "30073", "party": "Democratic", "email": "nancy.todd.senate@state.co.us",
+        "all_ids": ["COL000062", "COL000105"], "leg_id": "COL000062", "active": true,
+        "transparencydata_id": "37261dfcf5434ade8a716f32598df2eb", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/8201B4915C1660908725794300729C02/$FILE/S-Todd.jpg",
+        "+phone": "303 866 2919", "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=28&chamber=senate",
+        "country": "us", "created_at": "2012-01-19 01:01:49", "+occupation": "Retired
+        Teacher", "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-3432",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "suffixes": ""}, {"last_name": "Balmer", "updated_at": "2014-10-15
+        12:36:03", "full_name": "David Balmer", "id": "COL000074", "first_name": "David",
+        "middle_name": "", "district": "27", "+occupation": "Brownfield Redevelopment",
+        "state": "co", "votesmart_id": "30135", "party": "Republican", "suffixes":
+        "", "email": "david.balmer.senate@state.co.us", "all_ids": ["COL000074", "COL000101"],
+        "leg_id": "COL000074", "active": true, "transparencydata_id": "5ff01940d8bb4ede8a202595423388f8",
+        "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/19EAE72E1F34BD268725794300729C48/$FILE/S-Balmer.jpg",
+        "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=27&chamber=senate",
+        "country": "us", "created_at": "2012-01-19 01:01:49", "chamber": "upper",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-4883",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "+phone": "303 866 2935"}, {"last_name": "Jones", "updated_at": "2014-10-15
+        12:36:02", "full_name": "Matt Jones", "id": "COL000082", "first_name": "Matt",
+        "middle_name": "", "district": "17", "chamber": "upper", "state": "co", "votesmart_id":
+        "125489", "party": "Democratic", "email": "senatormattjones@gmail.com", "all_ids":
+        ["COL000082", "COL000110"], "leg_id": "COL000082", "active": true, "transparencydata_id":
+        "ded0bf06455a4db9be29d3ad7c344455", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/D316EF2A7D1893168725794300729BFA/$FILE/S-Jones.jpg",
+        "+phone": "303 866 2920", "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=17&chamber=senate",
+        "country": "us", "created_at": "2012-01-19 01:01:49", "+occupation": "Legislator",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-5291",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "suffixes": ""}, {"last_name": "Kefalas", "updated_at": "2014-10-15
+        12:36:03", "full_name": "John Kefalas", "id": "COL000094", "first_name": "John",
+        "middle_name": "", "district": "14", "+occupation": "Legislator / College
+        Instructor", "state": "co", "votesmart_id": "29946", "party": "Democratic",
+        "suffixes": "", "email": "john.kefalas.senate@state.co.us", "all_ids": ["COL000094",
+        "COL000109"], "leg_id": "COL000094", "active": true, "transparencydata_id":
+        "92d6bbcaad3843329c87a99bc15f8bfd", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/5ADE86AABD8A7B148725794300729C3E/$FILE/S-Kefalas.jpg",
+        "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=14&chamber=senate",
+        "country": "us", "created_at": "2012-01-19 01:01:49", "chamber": "upper",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-4841",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "+phone": "303 866 4569"}, {"last_name": "Baumgardner", "updated_at":
+        "2014-10-15 12:36:02", "full_name": "Randy Baumgardner", "id": "COL000099",
+        "first_name": "Randy L.", "middle_name": "", "district": "8", "+occupation":
+        "Rancher", "state": "co", "votesmart_id": "106641", "party": "Republican",
+        "suffixes": "", "email": "randy.baumgardner.senate@state.co.us", "all_ids":
+        ["COL000099", "COL000106"], "leg_id": "COL000099", "active": true, "transparencydata_id":
+        "61629bb92ddb49608b091fbde4ba9ce4", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/D646453344B2DED08725794300729C35/$FILE/S-Baumgardner.jpg",
+        "level": "state", "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=8&chamber=senate",
+        "country": "us", "created_at": "2012-01-19 01:01:49", "chamber": "upper",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-5292",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "+phone": "303 866 2949"}, {"last_name": "Ulibarri", "updated_at":
+        "2014-10-15 12:36:03", "full_name": "Jessie Ulibarri", "id": "COL000102",
+        "first_name": "Jessie", "middle_name": "", "district": "21", "chamber": "upper",
+        "state": "co", "party": "Democratic", "email": "jessie.ulibarri.senate@state.co.us",
+        "all_ids": ["COL000102"], "leg_id": "COL000102", "active": true, "transparencydata_id":
+        "3d208130717f4345897b313ad733b3c8", "nickname": "", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/29B34B5131E2B4D98725794300729BEE/$FILE/S-Ulibarri.jpg",
+        "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=21&chamber=senate",
+        "created_at": "2013-01-07 15:39:03", "+occupation": "Consultant", "offices":
+        [{"fax": null, "name": "Capitol Office", "phone": "303-866-4857", "address":
+        "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email": null}], "suffixes":
+        ""}, {"last_name": "Marble", "updated_at": "2014-10-15 12:36:03", "full_name":
+        "Vicki Marble", "id": "COL000104", "first_name": "Vicki", "middle_name": "",
+        "district": "23", "+occupation": "Business Owner - Retail", "state": "co",
+        "party": "Republican", "email": "vicki.marble.senate@state.co.us", "all_ids":
+        ["COL000104"], "leg_id": "COL000104", "active": true, "transparencydata_id":
+        "188dc5cef2a34713aa937bf483341614", "nickname": "", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/8A545BD04105ABDF8725794300729C3C/$FILE/S-Marble.jpg",
+        "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=23&chamber=senate",
+        "created_at": "2013-01-07 15:39:03", "chamber": "upper", "offices": [{"fax":
+        null, "name": "Capitol Office", "phone": "303-866-4876", "address": "200 E.
+        Colfax\nDenver, CO 80203", "type": "capitol", "email": null}], "suffixes":
+        ""}, {"last_name": "Hill", "updated_at": "2014-10-15 12:36:03", "full_name":
+        "Owen Hill", "id": "COL000107", "first_name": "Owen", "middle_name": "", "district":
+        "10", "+occupation": "Non-Profit", "state": "co", "party": "Republican", "email":
+        "owen.hill.senate@state.co.us", "all_ids": ["COL000107"], "leg_id": "COL000107",
+        "active": true, "transparencydata_id": "84ab28f784ed4b5dab89d73eabd8894d",
+        "nickname": "", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/BDA89012B2E4683B8725794300729C12/$FILE/S-Hill.jpg",
+        "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=10&chamber=senate",
+        "created_at": "2013-01-07 15:39:03", "chamber": "upper", "offices": [{"fax":
+        null, "name": "Capitol Office", "phone": "303-866-2737", "address": "200 E.
+        Colfax\nDenver, CO 80203", "type": "capitol", "email": null}], "suffixes":
+        ""}, {"last_name": "Crowder", "updated_at": "2014-10-15 12:36:03", "full_name":
+        "Larry Crowder", "id": "COL000111", "first_name": "Larry", "middle_name":
+        "", "district": "35", "chamber": "upper", "state": "co", "party": "Republican",
+        "email": "larry.crowder.senate@state.co.us", "all_ids": ["COL000111"], "leg_id":
+        "COL000111", "active": true, "transparencydata_id": "fe58f7ecdb8e4e00b2620f1a99c73419",
+        "nickname": "", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/876DC3B9A1ACD29E8725794300729C03/$FILE/S-Crowder.jpg",
+        "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=35&chamber=senate",
+        "created_at": "2013-01-07 15:39:03", "+occupation": "Senate District 35",
+        "offices": [{"fax": null, "name": "Capitol Office", "phone": "303-866-4875",
+        "address": "200 E. Colfax\nDenver, CO 80203", "type": "capitol", "email":
+        null}], "suffixes": ""}, {"last_name": "Kerr", "updated_at": "2014-10-15 12:36:03",
+        "full_name": "Andy Kerr", "id": "COL000148", "first_name": "Andy", "middle_name":
+        "", "district": "22", "+occupation": "Teacher", "state": "co", "party": "Democratic",
+        "csrfmiddlewaretoken": "6W0EVxLP4KAC1iZ0gGYjHaREUO0HtFaK", "email": "andy.kerr.senate@state.co.us",
+        "all_ids": ["COL000148"], "leg_id": "COL000148", "active": true, "transparencydata_id":
+        "976c0f52b85a4e76b77ab1b905f9bd9f", "nickname": "", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/C645C010791D80528725794300729C23/$FILE/S-Kerr.jpg",
+        "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=22&chamber=senate",
+        "created_at": "2013-01-15 00:11:16", "chamber": "upper", "offices": [{"fax":
+        null, "name": "Capitol Office", "phone": "303-866-4859", "address": "200 E.
+        Colfax\nDenver, CO 80203", "type": "capitol", "email": null}], "suffixes":
+        ""}, {"last_name": "Herpin", "updated_at": "2014-10-15 12:36:03", "full_name":
+        "Bernie Herpin", "id": "COL000160", "first_name": "Bernie", "middle_name":
+        "", "district": "11", "+occupation": "Retired USAF", "state": "co", "party":
+        "Republican", "email": "bernie.herpin.senate@state.co.us", "all_ids": ["COL000160"],
+        "leg_id": "COL000160", "active": true, "transparencydata_id": "", "nickname":
+        "", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/2768FBE421D6BB3B8725794300729C3A/$FILE/S-Herpin.jpg",
+        "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=11&chamber=senate",
+        "created_at": "2013-10-17 01:22:12", "chamber": "upper", "offices": [{"fax":
+        null, "name": "Capitol Office", "phone": "303-866-6364", "address": "200 E.
+        Colfax\nDenver, CO 80203", "type": "capitol", "email": null}], "suffixes":
+        ""}, {"last_name": "Zenzinger", "updated_at": "2014-10-15 12:36:03", "full_name":
+        "Rachel Zenzinger", "id": "COL000162", "first_name": "Rachel", "middle_name":
+        "", "district": "19", "+occupation": "Educator", "state": "co", "party": "Democratic",
+        "email": "SenatorRachelZ@gmail.com", "all_ids": ["COL000162"], "leg_id": "COL000162",
+        "active": true, "transparencydata_id": "", "nickname": "", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/8735A344A612F47E8725794300729C36/$FILE/S-Zenzinger.jpg",
+        "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=19&chamber=senate",
+        "created_at": "2013-12-14 14:53:33", "chamber": "upper", "offices": [{"fax":
+        null, "name": "Capitol Office", "phone": "303-866-4840", "address": "200 E.
+        Colfax\nDenver, CO 80203", "type": "capitol", "email": null}], "suffixes":
+        ""}, {"last_name": "Rivera", "updated_at": "2014-10-15 12:36:02", "full_name":
+        "George A. Rivera", "id": "COL000159", "first_name": "George A.", "middle_name":
+        "", "district": "3", "+occupation": "Legislator", "state": "co", "party":
+        "Republican", "email": "george.rivera.senate@state.co.us", "all_ids": ["COL000159"],
+        "leg_id": "COL000159", "active": true, "transparencydata_id": "", "nickname":
+        "", "photo_url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/0/AB587DFC7EAEF2728725794300729BF5/$FILE/S-Rivera.jpg",
+        "url": "http://www.leg.state.co.us//clics/clics2013A/directory.nsf/MemberDetailPage?OpenForm&district=3&chamber=senate",
+        "created_at": "2013-10-17 01:22:11", "chamber": "upper", "offices": [{"fax":
+        null, "name": "Capitol Office", "phone": "303-866-4878", "address": "200 E.
+        Colfax\nDenver, CO 80203", "type": "capitol", "email": null}], "suffixes":
+        ""}]'
+    http_version: 
+  recorded_at: Wed, 15 Oct 2014 16:00:46 GMT
+recorded_with: VCR 2.9.3

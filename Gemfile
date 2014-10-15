@@ -17,7 +17,6 @@ gem 'figaro'
 gem 'redis'
 gem 'geocoder'
 
-
 group :development, :test do
   gem 'spring'
   gem 'factory_girl_rails'
@@ -30,6 +29,8 @@ group :development do
 end
 
 group :test do
+  gem 'vcr'
+  gem 'webmock'
   gem 'capybara'
   gem 'database_cleaner'
   gem 'launchy'

@@ -4,7 +4,7 @@ FactoryGirl.define do
   factory :bill do
     external_id "12345"
     state "co"
-    type "resolution"
+    bill_type "resolution"
     title "Example Bill Title"
   end
 end

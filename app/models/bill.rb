@@ -8,7 +8,8 @@ class Bill < ActiveRecord::Base
       bill.external_id = data["id"]
       bill.state = data["co"]
       bill.title = data["title"]
-      bill.type = data["type"]
+      bill.type = data["type"].first
+      bill.external_updated_at = data["updated_at"].to_datetime
     end
   end
 end

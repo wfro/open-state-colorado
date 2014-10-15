@@ -10,7 +10,8 @@ RSpec.describe Bill, :type => :model do
   it { should respond_to(:external_id) }
   it { should respond_to(:state) }
   it { should respond_to(:title) }
-  it { should respond_to(:type) }
+  it { should respond_to(:bill_type) }
+  it { should respond_to(:external_updated_at) }
   it { should be_valid }
 
   it { should have_many(:votes) }

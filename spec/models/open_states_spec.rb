@@ -14,7 +14,7 @@ RSpec.describe OpenStates, type: :model do
   describe "#bills_search_string" do
     it "returns correct query string for bills starting in 2014" do
       result = open_states.bills_search_string
-      expected = "bills/?apikey=#{ENV['open_states_api_key']}&state=co&updated_since=2014-01-01"
+      expected = "bills/?apikey=#{ENV['open_states_api_key']}&per_page=20&state=co&updated_since=2014-01-01"
       expect(result).to eq expected
     end
   end

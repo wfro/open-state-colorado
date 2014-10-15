@@ -14,7 +14,8 @@ class OpenStates
     "bills/?" + {
       apikey: API_KEY,
       state: "co",
-      updated_since: "2014-01-01"
+      updated_since: "2014-01-01",
+      per_page: 20
     }.to_query
   end
 

@@ -16,3 +16,5 @@ test:
 production:
   <<: *default
   database: wamlut
+  username: deployment
+  password: password1

@@ -4,14 +4,15 @@ class Legislator < ActiveRecord::Base
   has_many :user_legislators
   has_many :users, through: :user_legislators
 
-  def self.filter_attributes(data = {})
-    attributes = %w[district party email photo_url url full_name]
-    filtered = data.select { |key, value| attributes.include?(key) }
-
-    # The local 'external_id' field is named 'leg_id' when it comes
-    # back from the Open States API
-    filtered["external_id"] = data["leg_id"]
-
-    return filtered
+  def self.save_data_from_api(data = {})
+    find_or_create_by(external_id: data["leg_id"]) do |legislator|
+      legislator.external_id = data["leg_id"]
+      legislator.district = data["district"]
+      legislator.party = data["party"]
+      legislator.email = data["email"]
+      legislator.photo_url = data["photo_url"]
+      legislator.url = data["url"]
+      legislator.full_name = data["full_name"]
+    end
   end
 end

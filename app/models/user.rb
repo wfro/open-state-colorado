@@ -25,4 +25,14 @@ class User < ActiveRecord::Base
     UserNotifier.send_periodic_notification(self).deliver
     notifications.create
   end
+
+  def due_for_notification?
+    Time.now >= last_notification + 2.weeks
+  end
+
+  def last_notification
+    if receives_notifications
+      self.notifications.last.created_at
+    end
+  end
 end

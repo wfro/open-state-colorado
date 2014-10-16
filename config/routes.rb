@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       post "geolocate"
       get "notifications"
       get "notifications_opt_in"
+      get "notifications_opt_out"
     end
   end
   resources :legislators, only: [:index, :show, :destroy]

@@ -38,7 +38,15 @@ class UsersController < ApplicationController
   def notifications_opt_in
     @user = User.find(params[:id])
     @user.send_initial_email
-    redirect_to notifications_path
+    @user.update_attributes(receives_notifications: true)
+    flash[:success] = "Email sent!"
+    redirect_to notifications_user_path
+  end
+
+  def notifications_opt_out
+    @user = User.find(params[:id])
+    @user.update_attributes(receives_notifications: false)
+    redirect_to notifications_user_path
   end
 
   private

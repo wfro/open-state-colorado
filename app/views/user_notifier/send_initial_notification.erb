@@ -5,9 +5,14 @@
   </head>
   <body>
     <h1>Welcome to your first notification!</h1>
-    <p>Here is some basic information about your state representatives.  
+    <p>Here is some basic information about your state representatives.
       Every 2 weeks you'll receive an email updating you on what kinds of bills
       they've been voting on and how they've been voting.</p>
+    <% @user.legislators.each do |legislator| %>
+      <h3><%= "#{legislator.full_name}" %></h3>
+      <p><%= legislator.email %></p>
+      <p><%= link_to "Official website", legislator.url %></p>
+    <% end %>
     <p>You can opt out at any time by clicking <%= link_to "here", "#" %></p>
   </body>
 </html>

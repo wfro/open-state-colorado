@@ -16,13 +16,13 @@ class User < ActiveRecord::Base
   end
 
   def send_initial_email
-    UserNotifier.send_initial_notification(self)
+    UserNotifier.send_initial_notification(self).deliver
     self.receives_notifications = true
     notifications.create
   end
 
   def send_periodic_email
-    UserNotifier.send_periodic_notification(self)
+    UserNotifier.send_periodic_notification(self).deliver
     notifications.create
   end
 end

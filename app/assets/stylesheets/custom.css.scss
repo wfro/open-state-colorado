@@ -55,11 +55,11 @@ a:hover, a:link {
 }
 
 // User show page
-.user-profile {
+.user-profile, .notifications-container {
   text-align: center;
 }
 
-.initial-user-info {
+.initial-user-info, .notifications-header {
   margin: 0 auto;
   width: 800px;
   font-size: 44px;
@@ -112,6 +112,23 @@ a:hover, a:link {
 
 .form-success {
   font-size: 22px;
+}
+
+.user-leg {
+  margin: 30px 0 30px 0;
+}
+
+.user-legislators-left {
+  padding-left: 240px;
+}
+
+.user-legislators-right {
+  padding-right: 240px;
+}
+
+.notifications-opt-in {
+  font-size: 32px;
+  color: #A81313;
 }
 
 // Footer

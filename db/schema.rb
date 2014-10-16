@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141015213729) do
+ActiveRecord::Schema.define(version: 20141016032650) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -57,6 +57,14 @@ ActiveRecord::Schema.define(version: 20141015213729) do
   end
 
   add_index "no_votes", ["vote_id"], name: "index_no_votes_on_vote_id", using: :btree
+
+  create_table "notifications", force: true do |t|
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "notifications", ["user_id"], name: "index_notifications_on_user_id", using: :btree
 
   create_table "other_votes", force: true do |t|
     t.integer  "vote_id"

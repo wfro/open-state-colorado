@@ -1,5 +1,5 @@
 namespace :api do
-  desc "Retrieve all CO reps from Open States API"
+  desc "Retrieve all CO reps from the Open States API"
   task legislators: :environment do
     open_states_api = OpenStates.new
     response = open_states_api.get_legislators

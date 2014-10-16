@@ -17,10 +17,6 @@ class UsersController < ApplicationController
     end
   end
 
-  def send_notification
-    UserNotifier.send_user_notification(@user).deliver
-  end
-
   def geolocate
     @user = User.find(params[:id])
     result = Geocoder.search(params[:address])

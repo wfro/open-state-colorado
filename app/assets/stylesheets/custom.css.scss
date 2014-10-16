@@ -75,9 +75,8 @@ a:hover, a:link {
 }
 
 .email-field {
-  border: 2px dashed;
   margin-top: 20px;
-  padding-left: 5px;
+  padding-left: 20px;
   color: #0970B5;
 }
 
@@ -102,11 +101,17 @@ a:hover, a:link {
 }
 
 .proceed-notifications {
+  margin-top: 20px;
 }
 
 .proceed-link {
   color: #0970B5;
-  font-size: 26px;
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.form-success {
+  font-size: 22px;
 }
 
 // Footer
@@ -157,7 +162,7 @@ footer {
   color: #5E5E5E;
 }
 
-.col-md-3 {
+.col-md-3, .col-md-6 {
   text-align: center;
 }
 

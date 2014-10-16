@@ -6,7 +6,7 @@ RSpec.describe "user update", type: :feature do
     SessionsHelper.stub(:current_user).and_return(User.first)
     mock_auth_hash
     click_link "Log in"
-    click_link "Welcome, facebook user"
+    click_link "Logged in as facebook user"
   end
 
   describe "with valid address" do
@@ -22,7 +22,7 @@ RSpec.describe "user update", type: :feature do
   context "with no email associated with their account" do
     it "successfully adds an email address" do
       fill_in "user[email]", with: "john@example.com"
-      click_button "Add my email"
+      within(".email-field") { click_button "submit" }
       expect(page).not_to have_content "Add my email"
       expect(page).to have_css "div.alert.alert-success", text: "Account information successfully updated!"
     end

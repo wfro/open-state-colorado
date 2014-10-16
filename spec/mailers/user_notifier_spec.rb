@@ -23,9 +23,5 @@ RSpec.describe UserNotifier, :type => :mailer do
     it "renders the sender email" do
       expect(mail.from).to eq ["will@wamlut.com"]
     end
-
-    it "renders @name" do
-      expect(mail.body.encoded).to match user.name
-    end
   end
 end

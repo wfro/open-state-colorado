@@ -16,6 +16,7 @@ gem 'omniauth-facebook'
 gem 'figaro'
 gem 'redis'
 gem 'geocoder'
+gem 'draper'
 
 group :development, :test do
   gem 'spring'

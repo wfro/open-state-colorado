@@ -5,7 +5,7 @@
   </head>
   <body>
     <% @user.legislators.each do |legislator| %>
-      <h3><%= legislator.full_name %></h3>
+      <h3><%= "#{legislator.full_name} #{legislatorparty_letter_in_paren}" %></h3>
       <p><%= legislator.email %></p>
       <p><%= link_to "Official website", legislator.url %></p>
     <% end %>

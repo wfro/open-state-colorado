@@ -1,6 +1,6 @@
 class LegislatorsController < ApplicationController
   def index
-    @legislators = Legislator.all
+    @legislators = LegislatorDecorator.all
   end
 
   def show

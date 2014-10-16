@@ -17,6 +17,7 @@ gem 'figaro'
 gem 'redis'
 gem 'geocoder'
 gem 'draper'
+gem 'whenever', :require => false
 
 group :development, :test do
   gem 'spring'

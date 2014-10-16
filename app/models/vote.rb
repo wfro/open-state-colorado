@@ -16,4 +16,14 @@ class Vote < ActiveRecord::Base
       vote.bill_id     = bill_id
     end
   end
+
+  def find_legislators_vote(leg_id)
+    no = no_votes.detect { |no_vote| no_vote.leg_id == leg_id }
+    yes = yes_votes.detect { |yes_vote| yes_vote.leg_id == leg_id }
+    other = other_votes.detect { |other_vote| other_vote.leg_id == leg_id }
+
+    return "no" if no
+    return "yes" if yes
+    return "other" if other
+  end
 end

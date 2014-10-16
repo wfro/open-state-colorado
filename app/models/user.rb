@@ -14,4 +14,14 @@ class User < ActiveRecord::Base
       end
     end
   end
+
+  def send_initial_email
+    UserNotifier.send_initial_notification(self)
+    notifications.create
+  end
+
+  def send_periodic_email
+    UserNotifier.send_periodic_notification(self)
+    notifications.create
+  end
 end

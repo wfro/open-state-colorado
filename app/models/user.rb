@@ -5,6 +5,8 @@ class User < ActiveRecord::Base
   has_many :legislators, through: :user_legislators
   has_many :notifications
 
+  scope :gets_notifications, -> { where(receives_notifications: true) }
+
   def self.create_with_omniauth(auth)
     create! do |user|
       user.provider = auth['provider']

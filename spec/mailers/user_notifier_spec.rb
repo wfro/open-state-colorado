@@ -4,16 +4,16 @@ RSpec.describe UserNotifier, :type => :mailer do
   it "sends a notification email" do
     user = FactoryGirl.build :user
 
-    expect { UserNotifier.send_user_notification(user).deliver }
+    expect { UserNotifier.send_initial_notification(user).deliver }
       .to change { ActionMailer::Base.deliveries.count }.by(1)
   end
 
   describe "send_user_notification" do
     let(:user) { FactoryGirl.create :user }
-    let(:mail) { UserNotifier.send_user_notification(user) }
+    let(:mail) { UserNotifier.send_initial_notification(user) }
 
     it "renders the subject" do
-      expect(mail.subject).to eq "Updates from wamlut.com"
+      expect(mail.subject).to eq "Your first wamlut notification"
     end
 
     it "renders the receiver email" do

@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :correct_user, only: [:show, :update, :geolocate, :notifications]
+  before_action :correct_user
 
   def show
     @user = User.find(params[:id])
@@ -33,6 +33,12 @@ class UsersController < ApplicationController
 
   def notifications
     @user = User.find(params[:id])
+  end
+
+  def notifications_opt_in
+    @user = User.find(params[:id])
+    @user.send_initial_email
+    redirect_to notifications_path
   end
 
   private

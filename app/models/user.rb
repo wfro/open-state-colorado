@@ -17,6 +17,7 @@ class User < ActiveRecord::Base
 
   def send_initial_email
     UserNotifier.send_initial_notification(self)
+    self.receives_notifications = true
     notifications.create
   end
 

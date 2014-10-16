@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     member do
       post "geolocate"
       get "notifications"
+      get "notifications_opt_in"
     end
   end
   resources :legislators, only: [:index, :show, :destroy]

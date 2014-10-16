@@ -1,1 +1,11 @@
-Not failing
+<div class="legislator-show">
+  <%= image_tag(@legislator.photo_url) %>
+  </br>
+  <%= @legislator.full_name %>
+  </br>
+  <%= @legislator.party.capitalize %>
+  </br>
+  <%= @legislator.email %>
+  </br>
+  <%= link_to "Official website", @legislator.url %>
+</div>
